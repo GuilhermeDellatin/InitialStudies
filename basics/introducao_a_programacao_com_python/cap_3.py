@@ -180,3 +180,28 @@ print(s[:])
 print(s[-1:])
 print(s[-5:7])
 print(s[-2:-1])
+
+# Sequências e tempo
+# Um programa é executado linha por linha pelo computador,
+# executando as operações descritas no programa uma após a outra.
+#
+# Quando trabalhamos com variáveis, devemos lembrar que o conteúdo de
+# uma variável pode mudar com o tempo.
+
+# Exemplo de sequência e tempo
+print("\n Listagem 3.15 - Exemplo de sequência e tempo")
+debt = 0
+buy = 100
+debt = debt + buy
+buy = 200
+debt = debt + buy
+buy = 300
+debt = debt + buy
+buy = 0
+print(debt)
+
+# Mudança no valor de duas variáveis no tempo
+#
+# Tempo  -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
+# Compra        100       200       300        0
+# Divida    0        100       300       600       600
