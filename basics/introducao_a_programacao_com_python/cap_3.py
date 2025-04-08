@@ -51,3 +51,39 @@
 #     f >= c     (x) True () False
 #     c <= c     (x) True () False
 #     c <= f     (x) True () False
+
+# Exercício 3.3
+# Complete a tabela a seguir utilizando a = True,
+# b = False, c = True.
+#
+# Expressão         Resultado
+#  a and a          () True () False
+#  b and b          () True () False
+#  not c            () True () False
+#  not b            () True () False
+#  not a            () True () False
+#  a and b          () True () False
+#  b and c          () True () False
+#  a or c           () True () False
+#  b or c           () True () False
+#  c or a           () True () False
+#  c or b           () True () False
+#  c or c           () True () False
+#  b or b           () True () False
+
+# Resposta:
+#
+# Expressão         Resultado
+#  a and a          (x) True () False
+#  b and b          () True (x) False
+#  not c            () True (x) False
+#  not b            (x) True () False
+#  not a            () True (x) False
+#  a and b          () True (x) False
+#  b and c          () True (x) False
+#  a or c           (x) True () False
+#  b or c           (x) True () False
+#  c or a           (x) True () False
+#  c or b           (x) True () False
+#  c or c           (x) True () False
+#  b or b           () True (x) False
