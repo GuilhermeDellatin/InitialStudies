@@ -87,3 +87,38 @@
 #  c or b           (x) True () False
 #  c or c           (x) True () False
 #  b or b           () True (x) False
+
+# Exercício 3.4
+# Escreva uma expressão para determinar se uma pessoa deve ou não pagar imposto.
+# Considere que pagam imposto pessoas cujo salário é maior que
+# R$ 1.200,00
+
+# Resposta: salario > 1200
+
+# Exercício 3.5
+# Calcule o resultado da expressão A > B and C or D, utilizando
+# os valores da tabela a seguir.
+#
+#   A     B     C     D     Resultado
+#   1     2     True  False
+#   10    3     False False
+#   5     1     True  True
+
+# Resposta:
+#
+#   A > B and C or D
+#
+#   A     B     C     D     Resultado
+#   1     2     True  False  False
+#   10    3     False False  False
+#   5     1     True  True   True
+
+# Exercício 3.6
+# Escreva uma expressão que será utilizada para decidir se um aluno foi ou não aprovado.
+# Para ser aprovado, todas as médias do aluno devem ser maiores que 7.
+# Considere que o aluno cursa apenas três matérias, e que a nota de cada uma está
+# armazenada nas seguintes variáveis: matéria1, matéria2, matéria3.
+
+# Resposta:
+#
+# materia1 > 7 and materia2 > 7 and materia3 > 7 -> True and True and True
