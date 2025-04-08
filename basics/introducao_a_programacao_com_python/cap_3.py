@@ -124,3 +124,28 @@
 # materia1 > 7 and materia2 > 7 and materia3 > 7 -> True and True and True, para ser aprovado
 # nesse caso avaliamos os operadores relacionais primeiro materiax > x
 # depois avaliamos os operadores lógicos
+
+# Exemplos de composição com marcadores
+print("\nListagem 3.10 - Exemplo de composição com marcadores")
+age = 22
+print("[%d]" % age)
+print("[%03d]" % age)
+print("[%3d]" % age)
+print("[%-3d]" % age)
+
+# Exemplo de composição com números decimais
+print("\nListagem 3.11 - Exemplo de composição com números decimais")
+print("%5f" % 5)
+print("%5.2f" % 5)
+print("%10.5f" % 5)
+
+# Exemplo de composição de string
+print("\nListagem 3.12 - Exemplo de composição de string")
+name = "João"
+#age = 22
+money = 51.34
+print("%s tem %d anos e R$%f no bolso.\n" % (name, age, money))
+print("%12s tem %3d anos e R$%5.2f no bolso.\n" % (name, age, money))
+print("%12s tem %03d anos e R$%5.2f no bolso.\n" % (name, age, money))
+print("%-12s tem %-3d anos e R$%-5.2f no bolso.\n" % (name, age, money))
+
