@@ -165,3 +165,18 @@ print(s[1:2])
 print(s[2:4])
 print(s[0:5])
 print(s[1:8])
+
+# Podemos omitir o número da esquerda ou direita no fatiamento
+# [:2] indica do início até o segundo caractere(exclusivo).
+# [1:] indica do caractere de posição 1 até o final da string.
+
+# Exemplo de fatiamento com omissão de valores e com índices negativos
+print("\n Listagem 3.13 - Exemplo de fatiamento com omissão de valores e com índices negativos")
+#s = "ABCDEFGHI"
+print(s[:2])
+print(s[1:])
+print(s[0:-2])
+print(s[:])
+print(s[-1:])
+print(s[-5:7])
+print(s[-2:-1])
