@@ -121,6 +121,6 @@
 
 # Resposta:
 #
-# materia1 > 7 and materia2 > 7 and materia3 > 7 -> True and True and True
+# materia1 > 7 and materia2 > 7 and materia3 > 7 -> True and True and True, para ser aprovado
 # nesse caso avaliamos os operadores relacionais primeiro materiax > x
 # depois avaliamos os operadores lógicos
