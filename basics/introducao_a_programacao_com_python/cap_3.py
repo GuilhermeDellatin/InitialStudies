@@ -149,3 +149,19 @@ print("%12s tem %3d anos e R$%5.2f no bolso.\n" % (name, age, money))
 print("%12s tem %03d anos e R$%5.2f no bolso.\n" % (name, age, money))
 print("%-12s tem %-3d anos e R$%-5.2f no bolso.\n" % (name, age, money))
 
+# Fatiamento de Strings: O Fatiamento é uma funcionalidade para extrair
+# partes específicas de uma string com base em critérios definidos,
+# como a posição dos caracteres.
+
+# O fatiamento funciona com a utilização de dois pontos no índice da string [0:2]
+# O número à esquerda dos dois pontos indica a posição de ínicio da fatia, o da
+# direita indica o fim, porém não é inclusivo
+
+# Exemplo de fatiamento
+print("\n Listagem 3.13 - Exemplo de fatiamento")
+s = "ABCDEFGHI"
+print(s[0:2])
+print(s[1:2])
+print(s[2:4])
+print(s[0:5])
+print(s[1:8])
