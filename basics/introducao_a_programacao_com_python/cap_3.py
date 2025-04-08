@@ -93,7 +93,7 @@
 # Considere que pagam imposto pessoas cujo salário é maior que
 # R$ 1.200,00
 
-# Resposta: salario > 1200
+# Resposta: salário > 1200
 
 # Exercício 3.5
 # Calcule o resultado da expressão A > B and C or D, utilizando
