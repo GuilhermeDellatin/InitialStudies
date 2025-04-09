@@ -246,3 +246,60 @@ percentage = int(input("Enter the percentage of salary increase: \n"))
 value_increase = salary_value * percentage / 100
 salary_increase = salary_value + value_increase
 print("\nThe increase is : R$ %5.2f and the new salary is: R$ %5.2f" %(value_increase , salary_increase))
+
+# Exercício 3.11
+# Faça um programa que solicite o preço de uma mercadoria e o percentual
+# de desconto. Exiba o valor do desconto e o preço a pagar.
+
+item_price = float(input("Enter the item price: \n"))
+percentage_discount = int(input("Enter the percentage of discount: \n"))
+value_discount = item_price * percentage_discount / 100
+total_item_price = item_price - value_discount
+print("\nThe discount value is : R$ %5.2f and the new item price is: R$ %5.2f"
+      %(value_discount , total_item_price)
+)
+
+
+# Exercício 3.12
+# Escreva um programa que calcule o tempo de uma viagem de carro.
+# Pergunte a distância a percorrer e a velocidade média esperada para a viagem.
+
+distance = int(input("Enter the trip distance: \n"))
+average_speed = int(input("Enter the average speed: \n"))
+print("The time of trip is: %d hours in distance %d km with average speed %d km/h"
+      %((distance / average_speed), distance, average_speed))
+
+
+# Exercício 3.13
+# Escreva um programa que converta uma temperatura digitada em ºC em ºF.
+# A fórmula para essa conversão é:
+# F = ((9 * C) / 5) + 32
+
+celsius = float(input("Enter the celsius degree temperature: \n"))
+fahrenheit = ((9 * celsius) / 5) + 32
+print("The celsius temperate %.1f in fahrenheit is %.1f" %(celsius, fahrenheit))
+
+# Exercício 3.14
+# Escreva um programa que pergunte a quantidade de km percorridos por um carro
+# alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado.
+# Calcule o preço a pagar, sabendo que o carro custa R$ 60 por dia e R$ 0,15 por km rodado.
+
+car_total_distance = int(input("Enter total distance in km that rented car was moved: \n"))
+car_days_rented = int(input("Enter the total of days that car was rented: \n"))
+car_rented_payment = (60 * car_days_rented) + (0.15 * car_total_distance)
+print("The total of payment for rent car is: R$ %.2f" %car_rented_payment)
+
+# Exercício 3.15
+# Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a
+# quantidade de cigarros fumados por dia e quantos anos ele já fumou. Considere que um
+# fumante perde 10 minutos de vida a cada cigarro, calcule quantos dias de vida um fumante
+# perderá. Exiba o total em dias.
+
+total_cigars_smoked_day = int(input("Enter total of cigars is smoked in a day: \n"))
+total_years_smoked = int(input("Enter total of years is smoked: \n"))
+
+#total_life_lost_in_days = (((total_cigars_smoked_day * total_years_smoked * 365) * 10) / 1440)
+total_life_lost_in_days = ((total_cigars_smoked_day * 10) / 1440) * total_years_smoked * 365
+
+print("The total day lost is: %.2f" %total_life_lost_in_days)
+
