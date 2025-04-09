@@ -205,3 +205,44 @@ print(debt)
 # Tempo  -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
 # Compra        100       200       300        0
 # Divida    0        100       300       600       600
+
+# Exercício 3.7
+# Faça um programa que peça dois números inteiros.
+# Imprima a soma desses dois números na tela
+
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+print("The sum of numbers is: %d" % (number1 + number2))
+
+# Exercício 3.8
+# Escreva um programa que leia um valor em metros e o exiba
+# convertido em milímetros
+
+meters = float(input("Enter the meters to convert in millimeters:\n"))
+millimeters = meters * 1000
+print("The result of conversion of %.2f meter(s) in millimeters is %.2f" %(meters, millimeters))
+
+# Exercício 3.9
+# Escreva um programa que leia a quantidade de dias, horas, minutos e segundos do usuário.
+# Calcule o total de segundos
+#
+# Esboço: 1m = 60s, 1h = 60m ou 3600s 1d = 24h ou 24*3600 = 86400
+
+days = int(input("Enter the quantity of days: \n"))
+hours = int(input("Enter the quantity of hours: \n"))
+minutes = int(input("Enter the quantity of minutes: \n"))
+seconds = int(input("Enter the quantity of seconds: \n"))
+
+total_seconds = (days * 86400) + (hours * 3600) + (minutes * 60) + seconds
+print("Total in seconds: ", total_seconds)
+
+# Exercício 3.10
+# Faça um programa que calcule o aumento de um salário. Ele deve solicitar
+# o valor do salário e a porcentagem do aumento. Exiba o valor do aumento
+# e do novo salário
+
+salary_value = float(input("Enter the salary: \n"))
+percentage = int(input("Enter the percentage of salary increase: \n"))
+value_increase = salary_value * percentage / 100
+salary_increase = salary_value + value_increase
+print("\nThe increase is : R$ %5.2f and the new salary is: R$ %5.2f" %(value_increase , salary_increase))
