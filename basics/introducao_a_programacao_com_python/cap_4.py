@@ -30,3 +30,26 @@ car_velocity = int(input("What is your speed?: "))
 if car_velocity > 80:
     fine = (car_velocity - 80) * 5
     print("You were fined, and its value is: R$", fine)
+
+# Exercício 4.3
+# Escreva um programa que leia três números e que imprima o maior e o menor
+
+# Obs: Resolvendo apenas com if nesse momento
+first_number = int(input("Enter the first number: "))
+second_number = int(input("Enter the second number: "))
+third_number = int(input("Enter the third number: "))
+
+bigger = first_number
+smaller = first_number
+
+if second_number > bigger:
+    bigger = second_number
+if third_number > bigger:
+    bigger = third_number
+
+if second_number < smaller:
+    smaller = second_number
+if third_number < smaller:
+    smaller = third_number
+
+print("The biggest number is %d and the smaller is %d" %(bigger, smaller))
