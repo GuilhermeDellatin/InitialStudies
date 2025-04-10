@@ -53,3 +53,18 @@ if third_number < smaller:
     smaller = third_number
 
 print("The biggest number is %d and the smaller is %d" %(bigger, smaller))
+
+# Exercício 4.4
+# Escreva um programa que pergunte o salário do funcionário e calcule o valor do aumento.
+# Para salários superiores a R$ 1250,00, calcule um aumento de 10%. Para os inferiores
+# ou iguais, de 15%.
+
+employee_salary = float(input("Enter your salary to calcule your increase:"))
+increase = 0
+
+if employee_salary > 1250:
+    increase = employee_salary * 0.1
+if employee_salary <= 1250:
+    increase = employee_salary * 0.15
+
+print("The value of increase is: %.2f" %increase)
