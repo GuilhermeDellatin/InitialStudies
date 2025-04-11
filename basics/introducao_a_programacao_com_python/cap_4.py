@@ -98,3 +98,19 @@ else:
 # quando o if não é satisfeito o bloco else é executado
 # já no primeiro caso usando dois ifs é feito outra verificação
 # para verificar a condição do segundo if
+
+# Exercício 4.6 - Escreva um programa que pergunte a distância que um passageiro
+# deseja percorrer em km. Calcule o preço da passagem, cobrando R$ 0,50 por km
+# para viagens de até 200 km, e R$ 0,45 para viagens mais longas
+
+passenger_travel_distance = float(input("What distance you travel in km?: "))
+
+if passenger_travel_distance <= 200:
+    ticket_price = passenger_travel_distance * 0.50
+else:
+    ticket_price = passenger_travel_distance * 0.45
+
+print("The Ticket price is %.2f" %ticket_price)
+
+# Uma forma outra forma de resolver:
+# ticket_price = passenger_travel_distance * (0.50 if passenger_travel_distance <= 200 else 0.45)
