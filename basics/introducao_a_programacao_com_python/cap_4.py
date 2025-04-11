@@ -6,6 +6,7 @@
 #   print("O primeiro número é o maior!")
 # if b > a:
 #   print("O segundo número é o maior!")
+from basics.introducao_a_programacao_com_python.cap_2 import result
 
 # Exercício 4.1
 # Analise o programa da listagem 4.2. Responda o que acontece
@@ -150,3 +151,46 @@ print("The Ticket price is %.2f" %ticket_price)
 # Entrada = 4 -> 120,122,124,125,127,128,130,131,132,140
 # Entrada = 5 -> 120,122,124,125,127,128,130,131,133,134,135,140
 # Entrada = 9 -> 120,122,124,125,127,128,130,131,133,134,136,137,138,140
+
+# Exercício 4.8
+# Escreva um programa que leia dois números e que pergunte qual operação você deseja realizar
+# Você pode calcular a soma (+), subtração (-), multiplicação (*) e divisão (/). Exiba o resultado
+# da operação solicitada
+
+number_one = float(input("Enter number one: "))
+number_two = float(input("Enter number two: "))
+operation = input("Enter operation: ")
+
+if operation == '+':
+    result = number_one + number_two
+elif operation == '-':
+    result = number_one - number_two
+elif operation == '*':
+    result = number_one * number_two
+elif operation == '/':
+    result = number_one / number_two
+else:
+    print("Invalid operation!")
+
+print("The result of operation %s of the numbers %.2f and %.2f is: %.2f" %(operation, number_one, number_two, result))
+
+# Exercício 4.9
+# Escreva um programa para aprovar o empréstimo bancário para compra de uma casa. O programa deve
+# perguntar o valor da casa a comprar, o salário e a quantidade de anos a pagar. O valor da prestação
+# mensal não pode ser superior a 30% do salário. Calcule o valor da prestação como sendo o valor da casa
+# a comprar dividido pelo número de meses a pagar
+
+# Exercício 4.10
+# Escreva um programa que calcule o preço a pagar pelo fornecimento de energia elétrica. Pergunte a quantidade
+# de kWh consumida e o tipo de instalação: R para residências, I para indústrias e C para comércios.
+# Calcule o preço a pagar de acordo com a tabela a seguir.
+#
+# Preço por tipo e faixa de consumo
+# Tipo              Faixa           Preço
+#
+# Residencial     Até 500           R$ 0,40
+#               Acima de 500        R$ 0,65
+# Comercial       Até 1000          R$ 0,55
+#               Acima de 1000       R$ 0,60
+# Industrial      Até 5000          R$ 0,55
+#               Acima de 5000       R$ 0,60
