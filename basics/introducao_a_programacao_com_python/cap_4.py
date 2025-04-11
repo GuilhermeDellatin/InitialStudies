@@ -68,3 +68,33 @@ if employee_salary <= 1250:
     increase = employee_salary * 0.15
 
 print("The value of increase is: %.2f" %increase)
+
+# Exercício 4.5
+# Execute o programa (Listagem 4.5) e experimente alguns valores.
+# Verifique se os resultados foram os mesmos do programa anterior (Listagem 4.3)
+
+# Listagem 4.3 - Carro novo ou velho, dependendo da idade:
+# idade = int(input("Digite a idade do seu carro: "))
+# if idade <= 3:
+#   print("Seu carro é novo")
+# if idade > 3:
+#   print("Seu carro é velho")
+
+# Listagem 4.5 - Carro novo ou velho, dependendo da idade com else
+# idade = int(input("Digite a idade do seu carro: "))
+# if idade <= 3:
+#   print("Seu carro é novo")
+# else:
+#   print("Seu carro é velho")
+
+car_age = int(input("Enter the car age: "))
+if car_age <= 3:
+    print("Your car is new")
+else:
+    print("Your car is old")
+
+# Resposta:
+# Os resultados foram os mesmos nesse caso, porém usando o else
+# quando o if não é satisfeito o bloco else é executado
+# já no primeiro caso usando dois ifs é feito outra verificação
+# para verificar a condição do segundo if
