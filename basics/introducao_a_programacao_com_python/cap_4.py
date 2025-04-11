@@ -114,3 +114,39 @@ print("The Ticket price is %.2f" %ticket_price)
 
 # Uma forma outra forma de resolver:
 # ticket_price = passenger_travel_distance * (0.50 if passenger_travel_distance <= 200 else 0.45)
+
+# Listagem 4.7 - Categoria x preço
+
+#categoria = int(input("Digite a categoria do produto: "))
+#
+#if categoria == 1:
+#    preco = 10
+#else:
+#    if categoria == 2:
+#        preco = 18
+#    else:
+#        if categoria == 3:
+#            preco = 23
+#        else:
+#            if categoria == 4:
+#                preco = 26
+#            else:
+#                if categoria == 5:
+#                    preco = 31
+#                else:
+#                    print("Categoria inválida, digite um valor entre 1 ee 5!")
+#                    preco = 0
+#
+#print("O preço do produto é: R$%6.2f" % preco)
+
+# Exercício  4.7
+# Rastreie o programa da listagem 4.7. Compare seu resultado ao apresentado na tabela 4.2
+
+#Resposta:
+# Entrada = 0 -> 120,122,124,125,127,128,130,131,133,134,136,137,138,140
+# Entrada = 1 -> 120,122,123,140
+# Entrada = 2 -> 120,122,124,125,126,140
+# Entrada = 3 -> 120,122,124,125,127,128,129,140
+# Entrada = 4 -> 120,122,124,125,127,128,130,131,132,140
+# Entrada = 5 -> 120,122,124,125,127,128,130,131,133,134,135,140
+# Entrada = 9 -> 120,122,124,125,127,128,130,131,133,134,136,137,138,140
