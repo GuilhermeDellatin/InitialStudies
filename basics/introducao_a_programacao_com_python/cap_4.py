@@ -233,12 +233,30 @@ else:
 # No programa a seguir inverta as linhas do if e else, negando a condição.
 # Adicione as linhas necessárias para fazê-lo funcionar em Python.
 
-#if a > b:
-#    print("A is greater than B")
-#else:
-#    print("B is greater than A")
+# if a > b:
+#     print("A is greater than B")
+# else:
+#     print("B is greater than A")
 
 if a < b:
     print("B is greater than A")
 else:
     print("A is greater than B")
+
+# Exercício 4.14
+# No programa a seguir com if-elif-else.
+# Adicione as linhas necessárias para fazê-lo funcionar em Python.
+
+# if a < 10:
+#   print("a is smaller than 10")
+# if a >= 10 and a < 20:
+#   print("a is greater than 10 and minor than 20")
+# if a >= 20:
+#   print("a is greater than 20")
+
+if a < 10:
+    print("a is smaller than 10")
+elif 10 <= a < 20:
+    print("a is greater than 10 and minor than 20")
+if a >= 20:
+    print("a is greater than 20")
