@@ -228,3 +228,19 @@ elif type_building == 'I':
     print("The price of energy is  %.2f " % electrical_energy_price)
 else:
     print("Invalid input")
+
+# Exercício 4.13
+# No programa a seguir inverta as linhas do if e else, negando a condição.
+# Adicione as linhas necessárias para fazê-lo funcionar em Python.
+
+#if a > b:
+#    print("A is greater than B")
+#else:
+#    print("B is greater than A")
+
+if a < b:
+    print("B is greater than A")
+elif a == b:
+    print("A is equal B")
+else:
+    print("A is greater than B")
