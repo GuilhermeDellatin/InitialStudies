@@ -244,7 +244,7 @@ else:
     print("A is greater than B")
 
 # Exercício 4.14
-# No programa a seguir com if-elif-else.
+# Reescreva o programa a seguir com if-elif-else.
 # Adicione as linhas necessárias para fazê-lo funcionar em Python.
 
 # if a < 10:
@@ -260,3 +260,41 @@ elif 10 <= a < 20:
     print("a is greater than 10 and minor than 20")
 if a >= 20:
     print("a is greater than 20")
+
+# Exercício 4.15
+# Reescreva o programa a seguir com if-elif-else.
+# Adicione as linhas necessárias para fazê-lo funcionar em Python.
+
+# hour = int(input("Enter the current hour: "))
+# if hour < 12:
+#   print("Good morning!")
+# if hour >= 12 and hour < 18:
+#   print("Good afternoon!")
+# if hour >= 18:
+#   print("Good night!")
+
+hour = int(input("Enter the current hour: "))
+if hour < 12:
+    print("Good morning!")
+elif 12 <= hour < 18:
+    print("Good afternoon!")
+else:
+    print("Good night!")
+
+# 4.16
+# Corrija o programa a seguir:
+# average = input("Enter your average: ")
+# if average < 4:
+#   print("Unfortunately you failed")
+# if average < 7:
+#   print("You were on the mend")
+# if average > 7:
+#   print("You have been approved")
+
+average = int(input("Enter your average: "))
+if average < 4:
+    print("Unfortunately you failed")
+elif 4 < average < 7:
+    print("You were on the mend")
+else:
+    print("You have been approved")
