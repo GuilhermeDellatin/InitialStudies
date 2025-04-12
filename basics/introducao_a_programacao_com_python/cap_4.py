@@ -240,7 +240,5 @@ else:
 
 if a < b:
     print("B is greater than A")
-elif a == b:
-    print("A is equal B")
 else:
     print("A is greater than B")
