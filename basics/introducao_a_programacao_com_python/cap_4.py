@@ -180,6 +180,16 @@ print("The result of operation %s of the numbers %.2f and %.2f is: %.2f" %(opera
 # mensal não pode ser superior a 30% do salário. Calcule o valor da prestação como sendo o valor da casa
 # a comprar dividido pelo número de meses a pagar
 
+house_value = float(input("Enter the value of the house you want to buy: "))
+salary_receive = float(input("Enter your salary: "))
+months_to_pay = int(input("Enter the quantity of months to pay: "))
+installment = house_value / months_to_pay
+
+if installment <= salary_receive * 0.30:
+    print("The loan is approved, and  your installment is: %.2f" %installment)
+else:
+    print("The loan is reproved")
+
 # Exercício 4.10
 # Escreva um programa que calcule o preço a pagar pelo fornecimento de energia elétrica. Pergunte a quantidade
 # de kWh consumida e o tipo de instalação: R para residências, I para indústrias e C para comércios.
@@ -194,3 +204,27 @@ print("The result of operation %s of the numbers %.2f and %.2f is: %.2f" %(opera
 #               Acima de 1000       R$ 0,60
 # Industrial      Até 5000          R$ 0,55
 #               Acima de 5000       R$ 0,60
+
+electrical_energy_use = float(input("Enter the electrical energy use in kWh: "))
+type_building = input("Enter the options for type building, R for houses, I for industry and C from trades")
+
+if type_building == 'R':
+    if electrical_energy_use <= 500:
+        electrical_energy_price = electrical_energy_use * 0.40
+    else:
+        electrical_energy_price = electrical_energy_use * 0.65
+    print("The price of energy is  %.2f " %electrical_energy_price)
+elif type_building == 'C':
+    if electrical_energy_use <= 1000:
+        electrical_energy_price = electrical_energy_use * 0.55
+    else:
+        electrical_energy_price = electrical_energy_use * 0.60
+    print("The price of energy is  %.2f " % electrical_energy_price)
+elif type_building == 'I':
+    if electrical_energy_use <= 5000:
+        electrical_energy_price = electrical_energy_use * 0.55
+    else:
+        electrical_energy_price = electrical_energy_use * 0.60
+    print("The price of energy is  %.2f " % electrical_energy_price)
+else:
+    print("Invalid input")
