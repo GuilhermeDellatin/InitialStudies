@@ -92,6 +92,12 @@ while number < 30:
 # Altere o programa anterior para exibir os resultados no mesmo formato
 # de uma tabuada de multiplicação: 2x1 = 2, 2x2 = 4,....
 
+number = int(input("Multiplication table:"))
+multiply = 1
+while multiply <= 10:
+    print(number * multiply)
+    multiply = multiply + 1
+
 # Exercício 5.7
 # Modifique o programa anterior de forma que o usuário também digite o início
 # e o fim da tabuada, em vez de começar com 1 e 10.
