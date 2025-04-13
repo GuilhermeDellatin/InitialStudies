@@ -80,7 +80,7 @@ while number < 30:
     print(number)
     number = number + 3
 
-# Exemplos
+# Exemplos tabuada de adição
 #
 # n = int(input("Tabuada de:"))
 # x = 1
@@ -101,6 +101,14 @@ while multiply <= 10:
 # Exercício 5.7
 # Modifique o programa anterior de forma que o usuário também digite o início
 # e o fim da tabuada, em vez de começar com 1 e 10.
+
+number = int(input("Multiplication table:"))
+number_init = int(input("Enter the init number:"))
+number_end = int(input("Enter the end number:"))
+
+while number_init <= number_end:
+    print(number * number_init)
+    number_init = number_init + 1
 
 # Exercício 5.8
 # Escreva um programa que leia dois números. Imprima o resultado da multiplicação
