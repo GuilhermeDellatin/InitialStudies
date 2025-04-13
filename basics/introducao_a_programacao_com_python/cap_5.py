@@ -105,7 +105,6 @@ while multiply <= 10:
 number = int(input("Multiplication table:"))
 number_init = int(input("Enter the init number:"))
 number_end = int(input("Enter the end number:"))
-
 while number_init <= number_end:
     print(number * number_init)
     number_init = number_init + 1
@@ -115,6 +114,27 @@ while number_init <= number_end:
 # do primeiro pelo segundo. Utilize apenas os operadores de soma e subtração para
 # calcular o resultado. Lembre-se de que podemos entender a multiplicação de dois números
 # como somas sucessivas de um deles. Assim, 4x5 = 5 + 5 + 5 + 5 = 4 + 4 + 4 + 4 + 4.
+
+number_one = int(input("Enter the number one:"))
+number_two = int(input("Enter the number two:"))
+
+result = 0
+count = 1
+while count <= number_one:
+    result = result + number_two
+    print(number_two)
+    count = count + 1
+print("The result of multiply is {result} with successive sum of {number_two} by {number_one} times"
+      .format(result = result, number_two = number_two, number_one = number_one))
+
+result = 0
+count = 1
+while count <= number_two:
+    result = result + number_one
+    print(number_one)
+    count = count + 1
+print("The result of multiply is {result} with successive sum of {number_one} by {number_two} times"
+      .format(result = result, number_one = number_one, number_two = number_two))
 
 # Exercício 5.9
 # Escreva um programa que leia dois números. Imprima a divisão inteira do primeiro
