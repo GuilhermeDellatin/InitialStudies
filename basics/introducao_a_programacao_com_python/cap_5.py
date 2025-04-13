@@ -79,3 +79,32 @@ number = 0
 while number < 30:
     print(number)
     number = number + 3
+
+# Exemplos
+#
+# n = int(input("Tabuada de:"))
+# x = 1
+# while x <= 10:
+#   print(n + x)
+#   x = x + 1
+
+# Exercício 5.6
+# Altere o programa anterior para exibir os resultados no mesmo formato
+# de uma tabuada de multiplicação: 2x1 = 2, 2x2 = 4,....
+
+# Exercício 5.7
+# Modifique o programa anterior de forma que o usuário também digite o início
+# e o fim da tabuada, em vez de começar com 1 e 10.
+
+# Exercício 5.8
+# Escreva um programa que leia dois números. Imprima o resultado da multiplicação
+# do primeiro pelo segundo. Utilize apenas os operadores de soma e subtração para
+# calcular o resultado. Lembre-se de que podemos entender a multiplicação de dois números
+# como somas sucessivas de um deles. Assim, 4x5 = 5 + 5 + 5 + 5 = 4 + 4 + 4 + 4 + 4.
+
+# Exercício 5.9
+# Escreva um programa que leia dois números. Imprima a divisão inteira do primeiro
+# pelo segundo, assim como o resto da divisão. Utilize apenas os operadores de soma
+# e subtração para calcular o resultado. Lembre-se de que podemos entender o quociente
+# da divisão de dois números como a quantidade de vezes que podemos retirar o divisor do dividendo.
+# Logo, 20 / 4 = 5, uma vez que podemos subtrair 4 cinco vezes de 20.
