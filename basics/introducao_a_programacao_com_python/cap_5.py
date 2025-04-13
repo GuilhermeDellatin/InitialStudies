@@ -68,3 +68,14 @@ while number <= end:
 
 # Exercício 5.5
 # Reescreva o programa anterior para escrever os 10 primeiros múltiplos de 3.
+
+number = 0
+while number < 30:
+    if number  % 3  == 0:
+        print(number)
+    number = number + 1
+
+number = 0
+while number < 30:
+    print(number)
+    number = number + 3
