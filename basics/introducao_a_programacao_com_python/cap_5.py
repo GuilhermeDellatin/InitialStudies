@@ -142,3 +142,20 @@ print("The result of multiply is {result} with successive sum of {number_one} by
 # e subtração para calcular o resultado. Lembre-se de que podemos entender o quociente
 # da divisão de dois números como a quantidade de vezes que podemos retirar o divisor do dividendo.
 # Logo, 20 / 4 = 5, uma vez que podemos subtrair 4 cinco vezes de 20.
+
+number_one = int(input("Enter the number one:"))
+number_two = int(input("Enter the number two:"))
+quotient = 0
+
+if number_two == 0:
+    print("Divison by 0  is not permited")
+else:
+    while number_one >= number_two:
+        number_one = number_one - number_two
+        quotient = quotient + 1
+        print(number_two)
+rest = number_one
+
+
+print("The result of division is {quotient} with rest {rest}, successive sub of {number_two} by {quotient} times"
+      .format(number_two = number_two, rest = rest, quotient = quotient))
