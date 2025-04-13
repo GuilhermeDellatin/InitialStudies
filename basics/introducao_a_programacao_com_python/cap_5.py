@@ -197,14 +197,17 @@ print(f"The student make {points} point(s)")
 # mês a mês para os 24 primeiros meses. Escreva o total ganho com juros no período.
 
 initial_deposit = float(input("Enter the initial value of deposit: "))
-interest_rate = float(input("Enter the interest rate of investment: "))
-month = 0
-total_interested = 0
+interest_rate = float(input("Enter the interest rate of investment 0.1 to 10%: "))
+month = 1
+balance = initial_deposit
 
-while month < 24:
-    performance = initial_deposit * interest_rate
-    initial_deposit += performance
-    total_interested += performance
-    print(f"Monthly value: R$ {initial_deposit:.2f}")
+while month <= 24:
+    balance += balance * interest_rate
+    print(f"Monthly {month} value: R$ {balance:.2f}")
     month += 1
-print(f"Total gained with interest rate R$ {total_interested:.2f}")
+print(f"Total gained with interest rate R$ {balance:.2f}")
+
+# Exercício 5.12
+# Altere o programa anterior de forma a perguntar também o valor depositado mensalmente. Esse valor será
+# depositado no início de cada mês, e você deve considerá-lo para o cálculo de juros do mês seguinte.
+
