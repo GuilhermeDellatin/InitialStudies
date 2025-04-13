@@ -191,3 +191,20 @@ while question <= 3:
         points += 1
     question += 1
 print(f"The student make {points} point(s)")
+
+# Exercício 5.11
+# Escreva um programa que pergunte o depósito inicial e a taxa de juros de uma poupança. Exiba os valores
+# mês a mês para os 24 primeiros meses. Escreva o total ganho com juros no período.
+
+initial_deposit = float(input("Enter the initial value of deposit: "))
+interest_rate = float(input("Enter the interest rate of investment: "))
+month = 0
+total_interested = 0
+
+while month < 24:
+    performance = initial_deposit * interest_rate
+    initial_deposit += performance
+    total_interested += performance
+    print(f"Monthly value: R$ {initial_deposit:.2f}")
+    month += 1
+print(f"Total gained with interest rate R$ {total_interested:.2f}")
