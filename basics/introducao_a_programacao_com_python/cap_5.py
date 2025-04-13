@@ -211,3 +211,14 @@ print(f"Total gained with interest rate R$ {balance:.2f}")
 # Altere o programa anterior de forma a perguntar também o valor depositado mensalmente. Esse valor será
 # depositado no início de cada mês, e você deve considerá-lo para o cálculo de juros do mês seguinte.
 
+initial_deposit = float(input("Enter the initial value of deposit: "))
+interest_rate = float(input("Enter the interest rate of investment 0.1 to 10%: "))
+month_deposit = float(input("Enter the monthly deposit: "))
+month = 1
+balance = initial_deposit
+
+while month <= 24:
+    balance += balance * interest_rate + month_deposit
+    print(f"Monthly {month} value: R$ {balance:.2f}")
+    month += 1
+print(f"Total gained with interest rate R$ {balance:.2f}")
