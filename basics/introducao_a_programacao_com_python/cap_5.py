@@ -148,7 +148,7 @@ number_two = int(input("Enter the number two:"))
 quotient = 0
 
 if number_two == 0:
-    print("Divison by 0  is not permited")
+    print("Division by 0  is not permitted")
 else:
     while number_one >= number_two:
         number_one = number_one - number_two
@@ -159,3 +159,35 @@ rest = number_one
 
 print("The result of division is {quotient} with rest {rest}, successive sub of {number_two} by {quotient} times"
       .format(number_two = number_two, rest = rest, quotient = quotient))
+
+# Exemplo
+#
+#pontos = 0
+#questao = 1
+#while questao <= 3:
+#    resposta = input(f"Resposta da questão {questao}: ")
+#    if questao == 1 and resposta == "b":
+#        pontos = pontos + 1
+#    if questao == 2 and resposta == "a":
+#        pontos = pontos + 1
+#    if questao == 3 and resposta == "d":
+#        pontos = pontos + 1
+#    questao = questao + 1
+#print(f"O aluno fez {pontos} pontos(s)")
+
+# Exercício 5.10
+# Modifique o programa anterior para que aceite respostas com letras maiúsculas e minúsculas
+# em todas as questões.
+
+points = 0
+question = 1
+while question <= 3:
+    answer = input("f Answer of question {question}: ")
+    if question == 1 and answer == 'b' or answer ==  'B':
+        points += 1
+    if question == 2 and answer == 'a' or answer ==  'A':
+        points += 1
+    if question == 3 and answer == 'd' or answer ==  'D':
+        points += 1
+    question += 1
+print(f"The student make {points} point(s)")
