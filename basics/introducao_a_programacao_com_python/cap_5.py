@@ -222,3 +222,27 @@ while month <= 24:
     print(f"Monthly {month} value: R$ {balance:.2f}")
     month += 1
 print(f"Total gained with interest rate R$ {balance:.2f}")
+
+# Exercício 5.13
+# Escreva um programa que pergunte o valor inicial de uma dívida e o juro mensal. Pergunte também o
+# valor mensal que será pago. Imprima o número de meses para que a dívida seja paga, o total pago e o total
+# de juros pago.
+
+initial_debt = float(input("Enter the initial value of a debt: "))
+interest_debt = float(input("Enter the debt interest ex 10 for 10% "))
+month_debt_payment = float(input("Enter the monthly payment of debit: "))
+debt = initial_debt
+month = 1
+interest_pay = 0
+
+while debt > month_debt_payment:
+    interest = debt  * interest_debt / 100
+    debt = debt + interest - month_debt_payment
+    interest_pay = interest_pay + interest
+    print(f"Debt balance for the month {month} is R${debt:.2f}.")
+    month += 1
+
+print(f"To pay a debit you need R${initial_debt:.2f}, and {interest_debt:.2f} % of initial debt,")
+print(f"You need {month - 1} months, pay a total interest R${interest_pay:.2f} of interest pay."
+)
+print(f"In last month, you have a R${debt:.2f} to pay.")
