@@ -338,9 +338,13 @@ print(f"Total price of product buying is {total_price:.2f} and the quantity of i
 
 # Exercício 5.16
 # Execute o Programa 5.1 para os seguintes valores: 501, 745, 384, 2, 7 e 1.
+#
+# Resposta: Programa executado para cada valor, o retorno é correto
 
 # Exercício 05.17
 # O que acontece se digitarmos 0 (zero) no valor a pagar?
+#
+# Resposta: Ele exibirá 0 cédula(s) de R$50
 
 # Exercício 05.18
 # Modifique o programa para também trabalhar com notas de R$ 100.
