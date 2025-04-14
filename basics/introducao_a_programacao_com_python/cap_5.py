@@ -245,3 +245,23 @@ while debt > month_debt_payment:
 print(f"To pay a debit you need R${initial_debt:.2f}, and {interest_debt:.2f} % of initial debt,")
 print(f"You need {month - 1} months, pay a total interest R${interest_pay:.2f} of interest pay.")
 print(f"In last month, you have a R${debt:.2f} to pay.")
+
+# Exercício 5.14
+# Escreva um programa que leia números inteiros do teclado. O programa deve ler os números até que o
+# usuário digite 0 (zero). No final da execução, exiba a quantidade de números digitados, assim como a
+# soma e a média aritmética.
+
+input_number = int(input("Enter number to calcule average, enter 0 to stop program: "))
+quantity_numbers = 0
+sum_numbers = 0
+
+while input_number != 0:
+    quantity_numbers += 1
+    sum_numbers += input_number
+    input_number = int(input("Enter number to calcule average, enter 0 to stop program: "))
+
+average = sum_numbers / quantity_numbers
+
+print(f"Quantity of entered numbers is {quantity_numbers} "
+      f"and sum of number is {sum_numbers} "
+      f"and your average is {average}")
