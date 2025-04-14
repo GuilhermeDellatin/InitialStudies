@@ -349,6 +349,31 @@ print(f"Total price of product buying is {total_price:.2f} and the quantity of i
 # Exercício 05.18
 # Modifique o programa para também trabalhar com notas de R$ 100.
 
+value = int(input("Enter the value to pay: "))
+cedulas = 0
+actual = 100
+to_pay = value
+
+while True:
+    if actual <= to_pay:
+        to_pay -= actual
+        cedulas += 1
+    else:
+        print(f"{cedulas} cedula(s) de R${actual}")
+        if to_pay == 0:
+            break
+        if actual == 100:
+            actual = 50
+        elif actual == 50:
+            actual = 20
+        elif actual == 20:
+            actual = 10
+        elif actual == 10:
+            actual = 5
+        elif actual == 5:
+            actual = 1
+        cedulas = 0
+
 # Exercício 05.19
 # Modifique o programa para aceitar valores decimais, ou seja, também contar moedas de 0,01, 0,02, 0,05,
 # 0,10 e 0,50
