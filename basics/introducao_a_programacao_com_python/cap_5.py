@@ -265,3 +265,48 @@ average = sum_numbers / quantity_numbers
 print(f"Quantity of entered numbers is {quantity_numbers} "
       f"and sum of number is {sum_numbers} "
       f"and your average is {average}")
+
+# Exercício 5.15
+# Escreva um programa para controlar uma pequena máquina registradora. Você deve solicitar ao usuário
+# que digite o código do produto e a quantidade comprada. Utilize a tabela de códigos a seguir para obter o
+# preço de cada produto:
+#
+# Código Preço
+# 1      0,50
+# 2      1,00
+# 3      4,00
+# 5      7,00
+# 9      8,00
+#
+# Seu programa deve exibir o total das compras depois que o usuário digitar 0. Qualquer outro código deve
+# gerar a mensagem de erro “Código inválido”.
+
+product_code = 0
+total_price = 0
+total_quantity = 0
+
+while True:
+    product_code = int(input("Enter the code of product the code is 1, 2, 3, 5, 9 or 0 for break: "))
+    if product_code == 0:
+        break
+    elif product_code != 1 and product_code != 2 and product_code != 3 and product_code != 5 and product_code != 9:
+        print("Invalid code.")
+    else:
+        item_quantity = int(input("Enter the quantity of product to buy: "))
+        if product_code == 1:
+            total_price += 0.5 * item_quantity
+            total_quantity += item_quantity
+        elif product_code == 2:
+            total_price += 1.0 * item_quantity
+            total_quantity += item_quantity
+        elif product_code == 3:
+            total_price += 4.0 * item_quantity
+            total_quantity += item_quantity
+        elif product_code == 5:
+            total_price += 7.0 * item_quantity
+            total_quantity += item_quantity
+        else:
+            total_price += 8.0 * item_quantity
+            total_quantity += item_quantity
+
+print(f"Total price of product buying is {total_price:.2f} and the quantity of item buying is {total_quantity}")
