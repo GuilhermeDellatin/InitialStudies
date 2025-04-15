@@ -389,7 +389,7 @@ while True:
         cedulas += 1
     else:
         print(f"{cedulas} cedula(s) de R${actual}")
-        if to_pay == 0:
+        if to_pay < 0.01:
             break
         if actual == 100:
             actual = 50
