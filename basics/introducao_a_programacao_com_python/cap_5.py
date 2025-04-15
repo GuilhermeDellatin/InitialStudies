@@ -453,3 +453,34 @@ while True:
         elif actual == 0.01:
             actual = 0.001
         cedulas = 0
+
+# Exercício 05.21
+# Reescreva o Programa 5.1 de forma a continuar executando até que o valor digitado seja 0.
+# Utilize repetições aninhadas.
+
+value = int(input("Enter the value to pay or zero to exit: "))
+
+while value != 0:
+    cedulas = 0
+    actual = 50
+    to_pay = value
+
+    while True:
+        if actual <= to_pay:
+            to_pay -= actual
+            cedulas += 1
+        else:
+            print(f"{cedulas} cedula(s) de R${actual}")
+            if to_pay == 0:
+                break
+            if actual == 50:
+                actual = 20
+            elif actual == 20:
+                actual = 10
+            elif actual == 10:
+                actual = 5
+            elif actual == 5:
+                actual = 1
+            cedulas = 0
+
+    value = int(input("Enter the value to pay or zero to exit: "))
