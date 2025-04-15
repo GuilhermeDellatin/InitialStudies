@@ -484,3 +484,45 @@ while value != 0:
             cedulas = 0
 
     value = int(input("Enter the value to pay or zero to exit: "))
+
+# Programa 5.2 Tabuada com repetições aninhadas
+#
+#tabuada = 1
+#while tabuada <= 10:
+#    numero = 1
+#    while numero <= 10:
+#        print(f"{tabuada} x {numero} = {tabuada * numero}")
+#        numero += 1
+#    tabuada += 1
+
+# Exercício 05.22
+# Escreva um programa que exiba uma lista de opções (menu): adição, subtração, divisão, multiplicação
+# e sair. Imprima a tabuada da operação escolhida. Repita até que a opção saída seja escolhida.
+
+operation = input("Enter the operations: * / + - or x to exit")
+
+while operation != 'x':
+    table = 1
+
+    if (operation != '*' and operation != '/' and operation != '+'
+            and operation != '-' and operation != 'x'):
+        print("Invalid operation")
+    else :
+        while table <= 10:
+            number = 1
+            while number <= 10:
+                if operation == '*':
+                    print(f"{table} x {number} = {table * number}")
+                    number += 1
+                elif operation == '/':
+                    print(f"{table} / {number} = {table / number}")
+                    number += 1
+                elif operation == '+':
+                    print(f"{table} + {number} = {table + number}")
+                    number += 1
+                elif operation == '-':
+                    print(f"{table} - {number} = {table - number}")
+                    number += 1
+            table += 1
+
+    operation = input("Enter the new operation: * / + - or 0 to exit")
