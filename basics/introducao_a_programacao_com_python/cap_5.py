@@ -553,3 +553,21 @@ else:
         print(f"The number {number} is prime")
     else:
         print(f"The number {number} is not prime")
+
+# Versão melhor do código
+number = int(input("Enter a number to verify if is prime: "))
+
+if number < 2:
+    print(f"The number {number} is not prime")
+else:
+    is_prime = True
+    count = 2
+    while count < number:
+        if number % count == 0:
+            is_prime = False
+            break
+        count += 1
+    if is_prime:
+        print(f"The number {number} is prime")
+    else:
+        print(f"The number {number} is not prime")
