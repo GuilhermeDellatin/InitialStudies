@@ -526,3 +526,30 @@ while operation != 'x':
             table += 1
 
     operation = input("Enter the new operation: * / + - or 0 to exit")
+
+# Exercício 05.23
+# Escreva um programa que leia um número e verifique se é ou não um número primo.
+# Para fazer essa verificação, calcule o resto da divisão do número por 2 e
+# depois por todos os números ímpares até o número lido.
+# Se o resto de uma dessas divisões for igual a zero, o número não é primo.
+# Observe que 0 e 1 não são primos e que 2 é o único número primo que é par.
+
+number = int(input("Enter a number to verify if is prime: "))
+count = 1
+is_divisor_count = 0
+
+if number < 2:
+    print(f"The number {number} is not prime")
+elif number == 2:
+    print(f"The number {number} is prime")
+else:
+    while count <= number:
+        if number % count != 0:
+            is_divisor_count += 0
+        else:
+            is_divisor_count += 1
+        count += 1
+    if is_divisor_count == 2:
+        print(f"The number {number} is prime")
+    else:
+        print(f"The number {number} is not prime")
