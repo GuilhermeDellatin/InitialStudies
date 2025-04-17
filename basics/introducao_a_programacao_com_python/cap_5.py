@@ -604,6 +604,7 @@ while count < prime:
 
 number = float(input("Enter a number to find your square root:"))
 base = 2
+p = 0
 
 while abs(number - (base * base)) > 0.0001:
     p = (base + (number / base)) / 2
@@ -625,7 +626,20 @@ while number_aux >= number_two:
 rest = number_aux
 print(f"The rest of division {number_one} / {number_two} is {rest}")
 
-
 # Exercício 05.27
 # Escreva um programa que verifique se um número é palíndromo. Um número é palíndromo se continua o
 # mesmo caso seus dígitos sejam invertidos. Exemplos: 454, 10501
+
+palindrome_number = int(input("Enter a number to verify if he is palindrome: "))
+reverse_number = 0
+aux_number = palindrome_number
+
+while aux_number != 0:
+    reverse_number = (aux_number % 10) + reverse_number * 10
+    aux_number //= 10
+    print(f"Reverse process: {reverse_number}, {aux_number}")
+
+if reverse_number == palindrome_number:
+    print(f"The number {palindrome_number} is palindrome and your reverse is {reverse_number}")
+else:
+    print(f"The number {palindrome_number} is not palindrome and your reverse is {reverse_number}")
