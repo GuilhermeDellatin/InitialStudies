@@ -571,3 +571,26 @@ else:
         print(f"The number {number} is prime")
     else:
         print(f"The number {number} is not prime")
+
+# Exercício 05-24
+# Modifique o programa anterior de forma a ler um número n. Imprima os n primeiros números primos.
+
+prime = int(input("Enter a number to discover the primes until number: "))
+count = 0
+number  = 2
+
+while count < prime:
+    is_prime = True
+    divider = 2
+
+    while divider * divider <= number:
+        if number  % divider == 0:
+            is_prime = False
+            break
+        divider += 1
+
+    if is_prime:
+        print(f"The number {number} is prime")
+        count += 1
+
+    number += 1
