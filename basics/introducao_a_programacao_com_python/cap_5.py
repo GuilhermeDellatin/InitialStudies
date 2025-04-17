@@ -572,7 +572,7 @@ else:
     else:
         print(f"The number {number} is not prime")
 
-# Exercício 05-24
+# Exercício 05.24
 # Modifique o programa anterior de forma a ler um número n. Imprima os n primeiros números primos.
 
 prime = int(input("Enter a number to discover the primes until number: "))
@@ -594,3 +594,30 @@ while count < prime:
         count += 1
 
     number += 1
+
+# Exercício 05.25
+# Escreva um programa que calcule a raiz quadrada de um número. Utilize o metodo de Newton para obter
+# um resultado aproximado. Sendo n o número a obter a raiz quadrada, considere a base b=2. Calcule p
+# usando a fórmula p=(b+(n/b))/2. Agora, calcule o quadrado de p. A cada passo, faça b=p e recalcule p
+# usando a fórmula apresentada. Pare quando a diferença absoluta entre n e o quadrado de p for menor que
+# 0,0001.
+
+# Exercício 05.26
+# Escreva um programa que calcule o resto da divisão inteira entre dois números. Utilize apenas as
+# operações de soma e subtração para calcular o resultado.
+
+number_one = int(input("Enter number one: "))
+number_two = int(input("Enter number two: "))
+quotient = 0
+number = number_one
+
+while number >= number_two:
+    number -= number_two
+    quotient += 1
+rest = number
+print(f"The rest of division {number_one} / {number_two} is {rest}")
+
+
+# Exercício 05.27
+# Escreva um programa que verifique se um número é palíndromo. Um número é palíndromo se continua o
+# mesmo caso seus dígitos sejam invertidos. Exemplos: 454, 10501
