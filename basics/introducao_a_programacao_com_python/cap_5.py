@@ -602,6 +602,14 @@ while count < prime:
 # usando a fórmula apresentada. Pare quando a diferença absoluta entre n e o quadrado de p for menor que
 # 0,0001.
 
+number = float(input("Enter a number to find your square root:"))
+base = 2
+
+while abs(number - (base * base)) > 0.0001:
+    p = (base + (number / base)) / 2
+    base = p
+print(f"The square root {number} is approximately {p:.4f}")
+
 # Exercício 05.26
 # Escreva um programa que calcule o resto da divisão inteira entre dois números. Utilize apenas as
 # operações de soma e subtração para calcular o resultado.
@@ -609,12 +617,12 @@ while count < prime:
 number_one = int(input("Enter number one: "))
 number_two = int(input("Enter number two: "))
 quotient = 0
-number = number_one
+number_aux = number_one
 
-while number >= number_two:
-    number -= number_two
+while number_aux >= number_two:
+    number_aux -= number_two
     quotient += 1
-rest = number
+rest = number_aux
 print(f"The rest of division {number_one} / {number_two} is {rest}")
 
 
