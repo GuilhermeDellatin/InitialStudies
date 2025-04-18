@@ -281,7 +281,6 @@ print(f"Quantity of entered numbers is {quantity_numbers} "
 # Seu programa deve exibir o total das compras depois que o usuário digitar 0. Qualquer outro código deve
 # gerar a mensagem de erro “Código inválido”.
 
-product_code = 0
 total_price = 0
 total_quantity = 0
 
