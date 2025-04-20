@@ -3,7 +3,7 @@
 # cujo valor é fornecido.
 
 # Exercício  3.5
-# Elabore um algoritmo que calcule o alcance de um projetil, dada a velocidade inicial v0 e  angulo Theta entre o
+# Elabore um algoritmo que calcule o alcance de um projetil, dada a velocidade inicial v0 e angulo Theta entre o
 # cano do canhão e o solo. A fórmula a ser utilizada é:
 # S = (v0²/g) * sen(2teta)
 
