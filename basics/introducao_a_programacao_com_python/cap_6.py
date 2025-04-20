@@ -42,3 +42,30 @@ while grade < 7:
     grade += 1
 
 print(f"Average: {sum_grades / grade:5.2f}")
+
+# Exercício 6.2
+# Faça um programa que leia duas listas e que gere uma terceira com os elementos das duas primeiras.
+
+first_list = []
+second_list = []
+
+while True:
+    element = int(input("Enter the first list elements, enter 0 to stop: "))
+
+    if element == 0:
+        break
+    else:
+        first_list.append(element)
+
+while True:
+    element = int(input("Enter the second list elements, enter 0 to stop: "))
+    if element == 0:
+        break
+    else:
+        second_list += [element]
+# Garante que nenhuma lista seja referenciada diretamente
+# third_list = first_list[:] + second_list[:]
+
+# Como não vamos usar essa lista adiante nesse cenário está ótimo para juntar listas.
+third_list = first_list + second_list
+print(f"third_list = {third_list}")
