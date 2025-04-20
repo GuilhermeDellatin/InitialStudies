@@ -25,7 +25,7 @@
 
 # Exercício 6.1
 # Modifique o Programa 6.2 para ler 7 notas em vez de 5.
-"""
+
 grades = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 sum_grades = 0
 grade = 0
@@ -94,48 +94,50 @@ print(f"third_list = {third_list}")
 #        second_list.append(element)
 #Também funciona da forma abaixo, porém cria uma lista temporaria e concatena na lista original
 #        second_list += [element]
-"""
+
 from shutil import which
 
 # Exercício 6.3
 # Faça um programa que percorra duas listas e gere uma terceira sem elementos repetidos.
 
-#first_list = []
-#second_list = []
-#
-#while True:
-#    element = int(input("Enter the first list elements, enter 0 to stop: "))
-#
-#    if element == 0:
-#        break
-#    else:
-#        first_list.append(element)
-#
-#while True:
-#    element = int(input("Enter the second list elements, enter 0 to stop: "))
-#    if element == 0:
-#        break
-#    else:
-#        second_list.append(element)
-#
-#third_list = first_list[:] + second_list[:]
-#third_list_without_repeat = []
-#x = 0
-#
-#while x < len(third_list):
-#    y = 0
-#
-#    while y < len(third_list_without_repeat):
-#
-#        if third_list[x] == third_list_without_repeat[y]:
-#            break
-#        y += 1
-#
-#    if y == len(third_list_without_repeat):
-#        third_list_without_repeat.append(third_list[x])
-#    x += 1
-#
-#print(third_list_without_repeat)
+"""
+first_list = []
+second_list = []
+
+while True:
+    element = int(input("Enter the first list elements, enter 0 to stop: "))
+
+    if element == 0:
+        break
+    else:
+        first_list.append(element)
+
+while True:
+    element = int(input("Enter the second list elements, enter 0 to stop: "))
+    if element == 0:
+        break
+    else:
+        second_list.append(element)
+
+third_list = first_list[:] + second_list[:]
+third_list_without_repeat = []
+x = 0
+
+while x < len(third_list):
+    y = 0
+
+    while y < len(third_list_without_repeat):
+
+        if third_list[x] == third_list_without_repeat[y]:
+            break
+        y += 1
+
+    if y == len(third_list_without_repeat):
+        third_list_without_repeat.append(third_list[x])
+    x += 1
+
+print(third_list_without_repeat)
+"""
 
 # Better code with while:
 
