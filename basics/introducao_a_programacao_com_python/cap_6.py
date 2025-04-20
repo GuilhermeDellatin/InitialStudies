@@ -165,4 +165,4 @@ while i < len(combined_list):
         unique_list.append(combined_list[i])
     i += 1
 
-print(f"The result list without repeated element is {unique_list}")
+print(f"The result list without duplicates element is {unique_list}")
