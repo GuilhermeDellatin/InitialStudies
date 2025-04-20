@@ -100,12 +100,50 @@ from shutil import which
 # Exercício 6.3
 # Faça um programa que percorra duas listas e gere uma terceira sem elementos repetidos.
 
+#first_list = []
+#second_list = []
+#
+#while True:
+#    element = int(input("Enter the first list elements, enter 0 to stop: "))
+#
+#    if element == 0:
+#        break
+#    else:
+#        first_list.append(element)
+#
+#while True:
+#    element = int(input("Enter the second list elements, enter 0 to stop: "))
+#    if element == 0:
+#        break
+#    else:
+#        second_list.append(element)
+#
+#third_list = first_list[:] + second_list[:]
+#third_list_without_repeat = []
+#x = 0
+#
+#while x < len(third_list):
+#    y = 0
+#
+#    while y < len(third_list_without_repeat):
+#
+#        if third_list[x] == third_list_without_repeat[y]:
+#            break
+#        y += 1
+#
+#    if y == len(third_list_without_repeat):
+#        third_list_without_repeat.append(third_list[x])
+#    x += 1
+#
+#print(third_list_without_repeat)
+
+# Better code with while:
+
 first_list = []
 second_list = []
 
 while True:
     element = int(input("Enter the first list elements, enter 0 to stop: "))
-
     if element == 0:
         break
     else:
@@ -118,21 +156,13 @@ while True:
     else:
         second_list.append(element)
 
-third_list = first_list[:] + second_list[:]
-third_list_without_repeat = []
-x = 0
+combined_list = first_list + second_list
+unique_list = []
+i = 0
 
-while x < len(third_list):
-    y = 0
+while i < len(combined_list):
+    if combined_list[i] not in unique_list:
+        unique_list.append(combined_list[i])
+    i += 1
 
-    while y < len(third_list_without_repeat):
-
-        if third_list[x] == third_list_without_repeat[y]:
-            break
-        y += 1
-
-    if y == len(third_list_without_repeat):
-        third_list_without_repeat.append(third_list[x])
-    x += 1
-
-print(third_list_without_repeat)
+print(f"The result list without repeated element is {unique_list}")
