@@ -62,10 +62,35 @@ while True:
     if element == 0:
         break
     else:
-        second_list += [element]
+        second_list.append(element)
+#       Também funciona da forma abaixo, porém cria uma lista temporaria e concatena na lista original
+#       second_list += [element]
 # Garante que nenhuma lista seja referenciada diretamente
 # third_list = first_list[:] + second_list[:]
 
 # Como não vamos usar essa lista adiante nesse cenário está ótimo para juntar listas.
 third_list = first_list + second_list
 print(f"third_list = {third_list}")
+
+# Se quisermos que permita qualquer input, só substituir o trecho de código da repetição pelo trecho a seguir:
+#
+#while True:
+#    element = input("Enter the first list elements, enter x to stop: ")
+#
+#    if element == 'x':
+#        break
+#    elif element == '':
+#        print("Invalid element")
+#    else:
+#        first_list.append(element)
+#
+#while True:
+#    element = input("Enter the second list elements, enter 0 to stop: ")
+#    if element == 'x':
+#        break
+#    elif element == '':
+#        print("Invalid element")
+#    else:
+#        second_list.append(element)
+#Também funciona da forma abaixo, porém cria uma lista temporaria e concatena na lista original
+#        second_list += [element]
