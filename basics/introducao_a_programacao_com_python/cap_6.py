@@ -191,3 +191,21 @@ while True:
         break
     else:
         print("Operação inválida! Digite apenas F, a ou S!")
+
+# Exercício 6.4
+# O que acontece quando não verificamos se a lista está vazia antes de chamarmos o metodo pop?
+
+# Resposta: Após remover todos os elementos, o programa apresentara um erro de indice:
+# IndexError: pop from empty list
+
+# Exercício 6.5
+# Altere o Programa 6.7 de forma a poder trabalhar com vários comandos digitados de uma só vez.
+# Atualmente, apenas um comando pode ser inserido por vez. Altere-o de forma a considerar operação
+# como uma string.
+# Exemplo: FFFAAAS significaria três chegadas de novos clientes, três atendimentos e, finalmente,
+# a saida do programa
+
+# Exercício 6.6
+# Modifique o programa para trabalhar com duas filas. Para facilitar seu trabalho,
+# considere o comando A para atendimento da fila 1; e B, para atendimento da fila 2.
+# O mesmo para a chegada de clientes: F para fila 1; e G, para fila 2.
