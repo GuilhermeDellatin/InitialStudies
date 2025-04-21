@@ -71,7 +71,7 @@ while number <= end:
 
 number = 0
 while number < 30:
-    if number  % 3  == 0:
+    if number % 3 == 0:
         print(number)
     number = number + 1
 
@@ -125,7 +125,7 @@ while count <= number_one:
     print(number_two)
     count = count + 1
 print("The result of multiply is {result} with successive sum of {number_two} by {number_one} times"
-      .format(result = result, number_two = number_two, number_one = number_one))
+      .format(result=result, number_two=number_two, number_one=number_one))
 
 result = 0
 count = 1
@@ -134,7 +134,7 @@ while count <= number_two:
     print(number_one)
     count = count + 1
 print("The result of multiply is {result} with successive sum of {number_one} by {number_two} times"
-      .format(result = result, number_one = number_one, number_two = number_two))
+      .format(result=result, number_one=number_one, number_two=number_two))
 
 # Exercício 5.9
 # Escreva um programa que leia dois números. Imprima a divisão inteira do primeiro
@@ -156,15 +156,14 @@ else:
         print(number_two)
 rest = number_one
 
-
 print("The result of division is {quotient} with rest {rest}, successive sub of {number_two} by {quotient} times"
-      .format(number_two = number_two, rest = rest, quotient = quotient))
+      .format(number_two=number_two, rest=rest, quotient=quotient))
 
 # Exemplo
 #
-#pontos = 0
-#questao = 1
-#while questao <= 3:
+# pontos = 0
+# questao = 1
+# while questao <= 3:
 #    resposta = input(f"Resposta da questão {questao}: ")
 #    if questao == 1 and resposta == "b":
 #        pontos = pontos + 1
@@ -173,7 +172,7 @@ print("The result of division is {quotient} with rest {rest}, successive sub of 
 #    if questao == 3 and resposta == "d":
 #        pontos = pontos + 1
 #    questao = questao + 1
-#print(f"O aluno fez {pontos} pontos(s)")
+# print(f"O aluno fez {pontos} pontos(s)")
 
 # Exercício 5.10
 # Modifique o programa anterior para que aceite respostas com letras maiúsculas e minúsculas
@@ -183,11 +182,11 @@ points = 0
 question = 1
 while question <= 3:
     answer = input("f Answer of question {question}: ")
-    if question == 1 and answer == 'b' or answer ==  'B':
+    if question == 1 and answer == 'b' or answer == 'B':
         points += 1
-    if question == 2 and answer == 'a' or answer ==  'A':
+    if question == 2 and answer == 'a' or answer == 'A':
         points += 1
-    if question == 3 and answer == 'd' or answer ==  'D':
+    if question == 3 and answer == 'd' or answer == 'D':
         points += 1
     question += 1
 print(f"The student make {points} point(s)")
@@ -236,7 +235,7 @@ month = 1
 interest_pay = 0
 
 while debt > month_debt_payment:
-    interest = debt  * interest_debt / 100
+    interest = debt * interest_debt / 100
     debt = debt + interest - month_debt_payment
     interest_pay = interest_pay + interest
     print(f"Debt balance for the month {month} is R${debt:.2f}.")
@@ -312,12 +311,12 @@ print(f"Total price of product buying is {total_price:.2f} and the quantity of i
 
 # Programa 5.1 Contagem de cédulas
 #
-#valor = int(input("Digite o valor a pagar: "))
-#cedulas = 0
-#atual = 50
-#apagar = valor
+# valor = int(input("Digite o valor a pagar: "))
+# cedulas = 0
+# atual = 50
+# apagar = valor
 #
-#while True:
+# while True:
 #    if atual <= apagar:
 #        apagar -= atual
 #        cedulas += 1
@@ -486,8 +485,8 @@ while value != 0:
 
 # Programa 5.2 Tabuada com repetições aninhadas
 #
-#tabuada = 1
-#while tabuada <= 10:
+# tabuada = 1
+# while tabuada <= 10:
 #    numero = 1
 #    while numero <= 10:
 #        print(f"{tabuada} x {numero} = {tabuada * numero}")
@@ -506,7 +505,7 @@ while operation != 'x':
     if (operation != '*' and operation != '/' and operation != '+'
             and operation != '-' and operation != 'x'):
         print("Invalid operation")
-    else :
+    else:
         while table <= 10:
             number = 1
             while number <= 10:
@@ -576,14 +575,14 @@ else:
 
 prime = int(input("Enter a number to discover the primes until number: "))
 count = 0
-number  = 2
+number = 2
 
 while count < prime:
     is_prime = True
     divider = 2
 
     while divider * divider <= number:
-        if number  % divider == 0:
+        if number % divider == 0:
             is_prime = False
             break
         divider += 1
