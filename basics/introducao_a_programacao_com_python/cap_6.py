@@ -205,6 +205,39 @@ while True:
 # Exemplo: FFFAAAS significaria três chegadas de novos clientes, três atendimentos e, finalmente,
 # a saida do programa
 
+last = 3
+queue = list(range(1, last + 1))
+
+while True:
+    print(f"\nThere are {len(queue)} customers in the queue")
+    print(f"Current queue: {queue}")
+    print("Type F to add a customer to the end of the queue,")
+    print("or A to serve the next customer. Type S to exit.")
+
+    i = 0
+    operation = input("Operation (F, A, or S): ").upper()
+
+    while i < len(operation):
+        if operation[i] == 'A':
+            if len(queue) > 0:
+                served = queue.pop(0)
+                print(f"Customer {served} has been served")
+            else:
+                print("Queue is empty! No one to serve.")
+        elif operation[i] == 'F':
+            last += 1
+            queue.append(last)
+        elif operation[i] == 'S':
+            break
+        else:
+            print("Invalid operation! Please enter only F, A, or S.")
+        i += 1
+
+    print(f"Remaining queue: {queue}")
+
+    if len(queue) == 0 or 'S' in operation:
+        break
+
 # Exercício 6.6
 # Modifique o programa para trabalhar com duas filas. Para facilitar seu trabalho,
 # considere o comando A para atendimento da fila 1; e B, para atendimento da fila 2.
