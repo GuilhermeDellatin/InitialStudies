@@ -95,8 +95,6 @@ print(f"third_list = {third_list}")
 # Também funciona da forma abaixo, porém cria uma lista temporaria e concatena na lista original
 #        second_list += [element]
 
-from shutil import which
-
 # Exercício 6.3
 # Faça um programa que percorra duas listas e gere uma terceira sem elementos repetidos.
 
