@@ -166,3 +166,28 @@ while i < len(combined_list):
     i += 1
 
 print(f"The result list without duplicates element is {unique_list}")
+
+# Programa 6.8 Simulação de uma fila de banco
+
+ultimo = 10
+fila = list(range(1, ultimo + 1))
+while True:
+    print(f"\nExistem {len(fila)} clientes na fila")
+    print(f"Fila atual: {fila}")
+    print("Digite F para adicionar um cliente ao fim da fila,")
+    print("ou A para realizar o atendimento. S para sair.")
+
+    operacao = input("Operação (F, A ou S):")
+    if operacao == 'A':
+        if len(fila) > 0:
+            atendido = fila.pop(0)
+            print(f"Cliente {atendido} atendido")
+        else:
+            print("Fila vazia! Ninguém para atender.")
+    elif operacao == 'F':
+        ultimo += 1
+        fila.append(ultimo)
+    elif operacao == 'S':
+        break
+    else:
+        print("Operação inválida! Digite apenas F, a ou S!")
