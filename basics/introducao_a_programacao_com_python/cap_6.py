@@ -305,7 +305,7 @@ while True:
     elif operacao == "E":
         prato += 1
         pilha.append(prato)
-    elif operation == "S":
+    elif operacao == "S":
         break
     else:
         print(f"Operação inválida! Digite apenas E, D ou S!")
