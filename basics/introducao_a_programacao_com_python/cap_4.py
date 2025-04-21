@@ -53,7 +53,7 @@ if second_number < smaller:
 if third_number < smaller:
     smaller = third_number
 
-print("The biggest number is %d and the smaller is %d" %(bigger, smaller))
+print("The biggest number is %d and the smaller is %d" % (bigger, smaller))
 
 # Exercício 4.4
 # Escreva um programa que pergunte o salário do funcionário e calcule o valor do aumento.
@@ -68,7 +68,7 @@ if employee_salary > 1250:
 if employee_salary <= 1250:
     increase = employee_salary * 0.15
 
-print("The value of increase is: %.2f" %increase)
+print("The value of increase is: %.2f" % increase)
 
 # Exercício 4.5
 # Execute o programa (Listagem 4.5) e experimente alguns valores.
@@ -111,18 +111,18 @@ if passenger_travel_distance <= 200:
 else:
     ticket_price = passenger_travel_distance * 0.45
 
-print("The Ticket price is %.2f" %ticket_price)
+print("The Ticket price is %.2f" % ticket_price)
 
 # Uma forma outra forma de resolver:
 # ticket_price = passenger_travel_distance * (0.50 if passenger_travel_distance <= 200 else 0.45)
 
 # Listagem 4.7 - Categoria x preço
 
-#categoria = int(input("Digite a categoria do produto: "))
+# categoria = int(input("Digite a categoria do produto: "))
 #
-#if categoria == 1:
+# if categoria == 1:
 #    preco = 10
-#else:
+# else:
 #    if categoria == 2:
 #        preco = 18
 #    else:
@@ -138,12 +138,12 @@ print("The Ticket price is %.2f" %ticket_price)
 #                    print("Categoria inválida, digite um valor entre 1 ee 5!")
 #                    preco = 0
 #
-#print("O preço do produto é: R$%6.2f" % preco)
+# print("O preço do produto é: R$%6.2f" % preco)
 
 # Exercício  4.7
 # Rastreie o programa da listagem 4.7. Compare seu resultado ao apresentado na tabela 4.2
 
-#Resposta:
+# Resposta:
 # Entrada = 0 -> 120,122,124,125,127,128,130,131,133,134,136,137,138,140
 # Entrada = 1 -> 120,122,123,140
 # Entrada = 2 -> 120,122,124,125,126,140
@@ -172,7 +172,7 @@ elif operation == '/':
 else:
     print("Invalid operation!")
 
-print("The result of operation %s of the numbers %.2f and %.2f is: %.2f" %(operation, number_one, number_two, result))
+print("The result of operation %s of the numbers %.2f and %.2f is: %.2f" % (operation, number_one, number_two, result))
 
 # Exercício 4.9
 # Escreva um programa para aprovar o empréstimo bancário para compra de uma casa. O programa deve
@@ -186,7 +186,7 @@ months_to_pay = int(input("Enter the quantity of months to pay: "))
 installment = house_value / months_to_pay
 
 if installment <= salary_receive * 0.30:
-    print("The loan is approved, and  your installment is: %.2f" %installment)
+    print("The loan is approved, and  your installment is: %.2f" % installment)
 else:
     print("The loan is reproved")
 
@@ -213,7 +213,7 @@ if type_building == 'R':
         electrical_energy_price = electrical_energy_use * 0.40
     else:
         electrical_energy_price = electrical_energy_use * 0.65
-    print("The price of energy is  %.2f " %electrical_energy_price)
+    print("The price of energy is  %.2f " % electrical_energy_price)
 elif type_building == 'C':
     if electrical_energy_use <= 1000:
         electrical_energy_price = electrical_energy_use * 0.55

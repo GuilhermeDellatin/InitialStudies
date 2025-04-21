@@ -1,27 +1,27 @@
 # Programa 6.1 Calculo da media
 #
-#notas = [6, 7, 5, 8, 9]
-#soma = 0
-#x = 0
-#while x < 5:
+# notas = [6, 7, 5, 8, 9]
+# soma = 0
+# x = 0
+# while x < 5:
 #    soma += notas[x]
 #    x += 1
-#print(f"Média: {soma / x:5.2f}")
+# print(f"Média: {soma / x:5.2f}")
 
 # Programa 6.2 Calculo da media com notas digitadas
 #
-#notas = [0, 0, 0, 0, 0]
-#soma = 0
-#x = 0
-#while x < 5:
+# notas = [0, 0, 0, 0, 0]
+# soma = 0
+# x = 0
+# while x < 5:
 #    notas[x] = int(input(f"Nota {x}: "))
 #    soma += notas[x]
 #    x += 1
-#x = 0
-#while x < 5:
+# x = 0
+# while x < 5:
 #    print(f"Nota {x}: {notas[x]:6.2f}")
 #    x += 1
-#print(f"Media: {soma / x:5.2f}")
+# print(f"Media: {soma / x:5.2f}")
 
 # Exercício 6.1
 # Modifique o Programa 6.2 para ler 7 notas em vez de 5.
@@ -74,7 +74,7 @@ print(f"third_list = {third_list}")
 
 # Se quisermos que permita qualquer input, só substituir o trecho de código da repetição pelo trecho a seguir:
 #
-#while True:
+# while True:
 #    element = input("Enter the first list elements, enter x to stop: ")
 #
 #    if element == 'x':
@@ -84,7 +84,7 @@ print(f"third_list = {third_list}")
 #    else:
 #        first_list.append(element)
 #
-#while True:
+# while True:
 #    element = input("Enter the second list elements, enter 0 to stop: ")
 #    if element == 'x':
 #        break
@@ -92,7 +92,7 @@ print(f"third_list = {third_list}")
 #        print("Invalid element")
 #    else:
 #        second_list.append(element)
-#Também funciona da forma abaixo, porém cria uma lista temporaria e concatena na lista original
+# Também funciona da forma abaixo, porém cria uma lista temporaria e concatena na lista original
 #        second_list += [element]
 
 from shutil import which
