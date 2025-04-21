@@ -70,3 +70,48 @@ if number % 2 == 0:
     print("The number is even")
 else:
     print("The number is odd")
+
+# Exercício 3.8
+# Elabora um algoritmo que leia dois numeros (x e y) e escreva como resultado o maior entre deles
+
+number_x = int(input("Enter the number x: "))
+number_y = int(input("Enter the number y: "))
+
+if number_x > number_y:
+    print(f"The number {number_x}  is greater than {number_y}")
+elif number_y > number_x:
+    print(f"The number {number_y}  is greater than {number_x}")
+else:
+    print(f"The number {number_x}  is equal than {number_y}")
+
+# Exercício 3.9
+# Elabora um algoritmo que permite a entrada de dois valores, x e y, troque seus valores entre si e então exiba os
+# novos resultados.
+
+# Observação, reaproveitando os inputs do exercício anterior
+print(f"Number x is {number_x} and Number y is {number_y}")
+number_swapped = number_x
+number_x = number_y
+number_y = number_swapped
+
+print(f"Swapped values, Number x is {number_x} and Number y is {number_y}")
+
+# Exercício 3.11
+# Elabore um algoritmo que permita a entrada de n valores reais e apresente como resultado o maior deles
+
+number_list = []
+
+while True:
+    number = int(input("Enter a number or 0 to exit: "))
+    if number == 0:
+        break
+    else:
+        number_list.append(number)
+
+print(f"The biggest number is {max(number_list)}")
+
+# Exercício 3.12
+# Idem ao exercício 3.8, só que escreva o menor deles
+
+# Exercício 3.13
+# Elabore um algoritmo que calcule e exiba a media de dois números digitados
