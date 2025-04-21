@@ -168,7 +168,7 @@ while i < len(combined_list):
 print(f"The result list without duplicates element is {unique_list}")
 
 # Programa 6.8 Simulação de uma fila de banco
-
+"""
 ultimo = 10
 fila = list(range(1, ultimo + 1))
 while True:
@@ -191,6 +191,7 @@ while True:
         break
     else:
         print("Operação inválida! Digite apenas F, a ou S!")
+"""
 
 # Exercício 6.4
 # O que acontece quando não verificamos se a lista está vazia antes de chamarmos o metodo pop?
@@ -242,3 +243,44 @@ while True:
 # Modifique o programa para trabalhar com duas filas. Para facilitar seu trabalho,
 # considere o comando A para atendimento da fila 1; e B, para atendimento da fila 2.
 # O mesmo para a chegada de clientes: F para fila 1; e G, para fila 2.
+
+last_queue_one = 3
+last_queue_two = 3
+queue_one = list(range(1, last_queue_one + 1))
+queue_two = list(range(1, last_queue_two + 1))
+while True:
+    print(f"\nThere are {len(queue_one)} customers in the queue one")
+    print(f"\nThere are {len(queue_two)} customers in the queue two")
+    print(f"Current queue one: {queue_one}")
+    print(f"Current queue two: {queue_two}")
+    print("""
+    Type F to add a customer to the end of the queue one,
+    or A to serve the next customer.
+    Type G to add a customer to the end of the queue two,
+    or B to serve the next customer.
+    Type S to exit.
+    """)
+
+    operation = input("Operation (F, A, G, B or S):")
+    if operation == 'A':
+        if len(queue_one) > 0:
+            served = queue_one.pop(0)
+            print(f"Customer {served} in queue one has been served")
+        else:
+            print("Queue one is empty! No one to serve.")
+    elif operation == 'F':
+        last_queue_one += 1
+        queue_one.append(last_queue_one)
+    elif operation == 'B':
+        if len(queue_two) > 0:
+            served = queue_two.pop(0)
+            print(f"Customer {served} in queue two has been served")
+        else:
+            print("Queue two is empty! No one to serve.")
+    elif operation == "G":
+        last_queue_two += 1
+        queue_two.append(last_queue_two)
+    elif operation == 'S':
+        break
+    else:
+        print("Operação inválida! Digite apenas F, a ou S!")
