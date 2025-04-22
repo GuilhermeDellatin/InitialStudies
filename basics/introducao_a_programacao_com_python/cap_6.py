@@ -322,3 +322,25 @@ while True:
 # Você pode adicionar elementos à pilha sempre que encontrar abre parênteses e desempilhá-la
 # a cada fecha parênteses. Ao desempilhar, verifique se o topo da pilha é um abre parênteses.
 # Se a expressão estiver correta, sua pilha estará vazia no final.
+
+expression = input("Enter the parenthesis expression:")
+stack = []
+i = 0
+
+while i < len(expression):
+    if expression[i] == "(":
+        stack.append("(")
+        print(f"Adding ( in stack, actual stack is {stack}")
+    if expression[i] == ")":
+        if len(stack) > 0:
+            stack.pop(-1)
+            print(f"Remove ) from stack, actual stack is {stack}")
+        else:
+            stack.append(")")
+            print(f"The rest of expression is {stack}")
+            break
+    i += 1
+if len(stack) == 0:
+    print("The expression is correct!")
+else:
+    print("The expression is wrong!")
