@@ -368,3 +368,17 @@ else:
 # Modifique o primeiro exemplo (Programa 6.9) de forma a realizar a mesma tarefa,
 # mas sem utilizar a variável achou. Dica: observe a condição de saída do while.
 
+number_list = [15, 7, 27, 39]
+value = int(input("Enter the value to find it:"))
+find = False
+x = 0
+
+while x < len(number_list):
+    if number_list[x] == value:
+        break
+    x += 1
+
+if x < len(number_list):
+    print(f"{value} found in position {x}")
+else:
+    print(f"{value} not found")
