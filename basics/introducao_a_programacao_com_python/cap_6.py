@@ -428,3 +428,15 @@ elif positionV < positionP:
     print(f"{v} was found first than {p}")
 else:
     print(f"{p} and {v} was found in same position")
+
+# Exemplo pesquisa sequencial usando for
+
+L = [7,  9, 10, 12]
+p = int(input("Digite um número a pesquisar:"))
+
+for e in L:
+    if e == p:
+        print("Elemento encontrado!")
+        break
+else:
+    print("Elemento nao encontrado")
