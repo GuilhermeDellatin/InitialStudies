@@ -476,3 +476,62 @@ for e in number_list:
 
 # Resposta: O primeiro while não pode ser substituído, porque temos uma condição especifíca para sair do laço de
 # repetição, nesse caso precisamos popular a lista de forma dinâmica, sem ter um tamanho pré-definido.
+
+# Exemplos range
+
+"""
+for v in range(10):
+    print(v)
+
+for v in range(5, 8):
+    print(v)
+
+for t in range(3, 33, 3):
+    print(t, end=" ")
+print()
+
+# a função range não retorna uma lista propriamente dita mas sim um generator.
+"""
+
+# Programa 6.10 Transformação de range em uma lista
+
+"""
+L = list(range(100, 1100, 50))
+print(L)
+"""
+
+# Exemplos enumerate
+
+"""
+L = [5, 9, 13]
+x = 0
+for e in L:
+    print(f"[{x}] {e}")
+    x += 1
+
+# Veja o mesmo programa utilizando enumerate:
+
+L = [5, 9, 13]
+for x, e in enumerate(L):
+    print(f"[{x}] {e}")
+    
+# A função enumerate gera uma tupla (par de valores) em que o primeiro valor é o índice
+# e o segundo é o elemento da lista sendo enumerada.
+
+L = [5, 9, 13]
+for z in enumerate(L):
+    x, e = z
+    print(f"[{x}] {e}")
+    print(z)
+
+# que resulta em:
+# [0] 5
+# (0, 5)
+# [1] 9
+# (1, 9)
+# [2] 13
+# (2, 13)
+"""
+
+# Exercício 6.12
+# Altere o Programa 6.11 de forma a imprimir o menor elemento da lista
