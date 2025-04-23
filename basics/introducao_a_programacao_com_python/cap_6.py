@@ -382,3 +382,48 @@ if x < len(number_list):
     print(f"{value} found in position {x}")
 else:
     print(f"{value} not found")
+
+# Exercício 6.9
+# Modifique o exemplo para pesquisar dois valores.
+# Em vez de apenas p, leia outro valor v que também será procurado.
+# Na impressão, indique qual dos dois valores foi achado primeiro.
+
+# Exercício 6.10
+# Modifique o programa do Exercício 6.9
+# de forma a pesquisar p e v em toda a lista e
+# informando o usuário a posição onde p e a posição onde v foram encontrados.
+
+number_list = [15, 7, 27, 39]
+p = int(input("Enter the value p to find it:"))
+v = int(input("Enter the value v to find it:"))
+findP = False
+findV = False
+positionP = 0
+positionV = 0
+x = 0
+
+while x < len(number_list):
+    if number_list[x] == p:
+        findP = True
+        positionP = x
+    if number_list[x] == v:
+        findV = True
+        positionV = x
+    x += 1
+
+if findP:
+    print(f"{p} found in position {positionP}")
+else:
+    print(f"{p} not found")
+
+if findV:
+    print(f"{v} found in position {positionV}")
+else:
+    print(f"{v} not found")
+
+if positionP < positionV:
+    print(f"{p} was found first than {v}")
+elif positionV < positionP:
+    print(f"{v} was found first than {p}")
+else:
+    print(f"{p} and {v} was found in same position")
