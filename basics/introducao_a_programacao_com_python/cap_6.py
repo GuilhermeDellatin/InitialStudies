@@ -393,6 +393,7 @@ else:
 # de forma a pesquisar p e v em toda a lista e
 # informando o usuário a posição onde p e a posição onde v foram encontrados.
 
+# Mesmo código resolve o 6.9 e 6.10
 number_list = [15, 7, 27, 39]
 p = int(input("Enter the value p to find it:"))
 v = int(input("Enter the value v to find it:"))
