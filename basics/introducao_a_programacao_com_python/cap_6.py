@@ -517,6 +517,9 @@ for x, e in enumerate(L):
     
 # A função enumerate gera uma tupla (par de valores) em que o primeiro valor é o índice
 # e o segundo é o elemento da lista sendo enumerada.
+# Python permite o desempacotamento de valores da tupla, atribuindo um elemento da tupla a cada variável em for, 
+# por isso é possível em cada iteração obtermos os valores e suas respectivas posições como (0, 5), na próxima
+# iteração (1, 9) e assim por diante.
 
 L = [5, 9, 13]
 for z in enumerate(L):
@@ -533,5 +536,33 @@ for z in enumerate(L):
 # (2, 13)
 """
 
+# Programa 6.11 Verificação de maior valor
+
+"""
+L = [1, 7, 2, 4]
+maximo = L[0]
+for e in L:
+    if e > maximo:
+        maximo = e
+print(maximo)
+"""
+
 # Exercício 6.12
 # Altere o Programa 6.11 de forma a imprimir o menor elemento da lista
+
+number_list = [1, 7, 2, 4]
+minimum = number_list[0]
+
+for e in number_list:
+    if e < minimum:
+        minimum = e
+
+print(minimum)
+
+# Observação: Uma forma mais fácil de resolver será demonstrada abaixo
+
+"""
+number_list = [1, 7, 2, 4]
+print(min(number_list))
+"""
+
