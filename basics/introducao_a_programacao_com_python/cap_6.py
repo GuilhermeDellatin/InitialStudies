@@ -566,3 +566,42 @@ number_list = [1, 7, 2, 4]
 print(min(number_list))
 """
 
+# Exercício 6.13
+# A lista de temperaturas de Mons, na Bélgica, foi armazenada na lista T = [-10, -8, 0, 1, 2, 5, -2, -4].
+# Faça um programa que imprima a menor e a maior temperatura, assim como a temperatura média.
+
+mons_temperatures = [-10, -8, 0, 1, 2, 5, -2, -4]
+lower_temperature = 0
+higher_temperature = 0
+average_temperature = 0
+count = 0
+
+for t in mons_temperatures:
+    if t < lower_temperature:
+        lower_temperature = t
+    elif t > higher_temperature:
+        higher_temperature = t
+    average_temperature += t
+    count += 1
+
+print(f"The lower temperature is {lower_temperature} "
+      f"the higher temperature is {higher_temperature} "
+      f"and the average of temperatures is {average_temperature / count }")
+
+# Observação: Outras formas de resolver o problema, mas já usando funções prontas:
+"""
+mons_temperatures = [-10, -8, 0, 1, 2, 5, -2, -4]
+
+print(f"The lower temperature is {min(mons_temperatures)} "
+      f"the higher temperature is {max(mons_temperatures)} "
+      f"and the average of temperatures is {statistics.mean(mons_temperatures)}")
+
+Outra maneira:
+      
+mons_temperatures = [-10, -8, 0, 1, 2, 5, -2, -4]
+average_temperature = sum(mons_temperatures) / len(mons_temperatures)
+
+print(f"The lower temperature is {min(mons_temperatures)} "
+      f"the higher temperature is {max(mons_temperatures)} "
+      f"and the average of temperatures is {average_temperature}")
+"""
