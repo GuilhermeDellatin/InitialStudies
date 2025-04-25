@@ -605,3 +605,20 @@ print(f"The lower temperature is {min(mons_temperatures)} "
       f"the higher temperature is {max(mons_temperatures)} "
       f"and the average of temperatures is {average_temperature}")
 """
+
+# Programa 6.13 Copia de elementos para outras listas
+
+"""
+valores = [9, 8, 7, 12, 0, 13, 21]
+pares = []
+impares = []
+
+for e in valores:
+    if e % 2 == 0:
+        pares.append(e)
+    else:
+        impares.append(e)
+        
+print(f"Pares: {pares}")
+print(f"Impares: {impares}")
+"""
