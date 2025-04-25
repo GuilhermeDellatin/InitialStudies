@@ -606,7 +606,7 @@ print(f"The lower temperature is {min(mons_temperatures)} "
       f"and the average of temperatures is {average_temperature}")
 """
 
-# Programa 6.13 Copia de elementos para outras listas
+# Programa 6.12 Copia de elementos para outras listas
 
 """
 valores = [9, 8, 7, 12, 0, 13, 21]
