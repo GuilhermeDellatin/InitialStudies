@@ -611,14 +611,43 @@ print(f"The lower temperature is {min(mons_temperatures)} "
 """
 valores = [9, 8, 7, 12, 0, 13, 21]
 pares = []
-impares = []
+ímpares = []
 
 for e in valores:
     if e % 2 == 0:
         pares.append(e)
     else:
-        impares.append(e)
+        ímpares.append(e)
         
 print(f"Pares: {pares}")
-print(f"Impares: {impares}")
+print(f"Ímpares: {ímpares}")
+"""
+
+# Programa 6.13 Controle da utilização de salas de um cinema
+
+"""
+lugares_vagos = [10, 2, 1, 3, 0]
+
+while True:
+    sala = int(input("Sala (0 sai): "))
+    if sala == 0:
+        print("Fim")
+        break
+    if sala > len(lugares_vagos) or sala < 1:
+        print("Sala invalida")
+    elif lugares_vagos[sala - 1] == 0:
+        print("Desculpe, sala lotada!")
+    else:
+        lugares = int(input(f"Quantos lugares voce deseja ({lugares_vagos[sala - 1]} vagos):"))
+        if lugares > lugares_vagos[sala - 1]:
+            print("Esse número de lugares nao está disponível")
+        elif lugares < 0:
+            print("Número inválido")
+        else:
+            lugares_vagos[sala - 1] -= lugares
+            print(f"{lugares} lugares vendidos")
+
+print("Utilização das salas")
+for sala, vagos in enumerate(lugares_vagos):
+    print(f"Sala {sala + 1} - {vagos} lugar(es) vazio(s)")
 """
