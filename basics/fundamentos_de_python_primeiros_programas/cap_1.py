@@ -1,4 +1,4 @@
-# Exercicio 1
+# Exercício 1
 # Abra um shell Python, insira as seguintes expressões e observe os resultados
 # a) 8
 # b) 8*2
@@ -7,17 +7,45 @@
 # e) 8 // 12
 # f) 8 / 0
 
-# Exercicio 2
+# Resposta:
+# a) 8
+# b) 16
+# c) 64
+# d) 0.6666666666666666
+# e) 0
+# f) Exception:
+# Traceback (most recent call last):
+#   File "<input>", line 1, in <module>
+# ZeroDivisionError: division by zero
+
+# Exercício 2
 # Escreva um programa em Python que imprime(exibe) seu nome, endereço e número de telefone.
+
+name = "Teste"
+address = "Avenida do teste, 123"
+phone = "(12) 3456-7890"
+print(f"your name is {name} your address {address} and phone {phone}")
 
 # Exercício 3
 # Avalie o seguinte código em um prompt de shell: print("Your name is", nome). Em seguida,
 # atribua a name um valor apropriado e avalie a instrução novamente.
 
+# Resposta: O comanda gera uma exception, porquee a variavel nome não foi definida
+# Traceback (most recent call last):
+#   File "<input>", line 1, in <module>
+# NameError: name 'nome' is not defined. Did you mean: 'None'?
+
+# Atribuindo um valor apropriado o shell executa corretamente
+
+name = "Teste"
+print("Your name is", name)
+
 # Exercício 4
 # Abra uma janela IDLE e abra o programa da figura 1-7 que calcula a área de um retângulo.
 # Carregue o programa no shell pressionando a tecla F5 e corrija os erros que ocorrerem.
 # Teste o programa com diferentes entradas executando-o pelo menos três vezes.
+
+
 
 # Exercício 5
 # Modifique o programa do Projeto 4 para calcular a área de um triângulo. Emita os prompts
