@@ -651,3 +651,46 @@ print("Utilização das salas")
 for sala, vagos in enumerate(lugares_vagos):
     print(f"Sala {sala + 1} - {vagos} lugar(es) vazio(s)")
 """
+
+# Exercício 6.14
+# Modifique o Programa 6.13 de forma a mostrar quantos ingressos foram vendidos em cada sala. Utilize
+# uma lista do mesmo tamanho da quantidade de salas e utilize seus elementos para contar quantos
+# ingressos foram vendidos em cada sala. Imprima na tela o total das vendas no fim do programa.
+
+available_seats = [10, 2, 1, 3, 0]
+tickets_sold = [0, 0, 0, 0]
+
+while True:
+    room = int(input("Room (0 to exit): "))
+    if room == 0:
+        print("End")
+        break
+    if room > len(available_seats) or room < 1:
+        print("Invalid room")
+    elif available_seats[room - 1] == 0:
+        print("Sorry, room is full!")
+    else:
+        seats = int(input(f"How many seats would you like ({available_seats[room - 1]} available): "))
+        if seats > available_seats[room - 1]:
+            print("That number of seats is not available")
+        elif seats < 0:
+            print("Invalid number")
+        else:
+            available_seats[room - 1] -= seats
+            print(f"{seats} seat(s) sold")
+            tickets_sold[room - 1] += seats
+
+print("Room usage")
+for room, seats_left in enumerate(available_seats):
+    print(f"Room {room + 1} - {seats_left} seat(s) available")
+
+print("Total tickets sold")
+print(sum(tickets_sold))
+
+print("Tickets sold per room")
+for room, sold in enumerate(tickets_sold):
+    print(f"Room {room + 1} - {sold} ticket(s) sold")
+
+# Exercício 6.15
+# Modifique o Programa 6.13 de forma a perguntar o número de salas disponíveis no cinema, assim como a
+# quantidade de lugares em cada uma delas.
