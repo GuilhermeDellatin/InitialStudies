@@ -763,3 +763,15 @@ while True:
 for p in compras:
     print(p)
 """
+
+# Listas dentro de listas
+# Podemos acessar as strings dentro da lista, letra por letra, usando um segundo índice
+
+# Programa 6.15 Impressão de uma lista de strings, letra a letra
+
+"""
+L = ["maçãs", "peras", "kiwis"]
+for s in L:
+    for letra in s:
+        print(letra)
+"""
