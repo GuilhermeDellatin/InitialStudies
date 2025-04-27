@@ -734,3 +734,32 @@ print(sum(tickets_sold))
 print("\nTickets sold per room")
 for room, sold in enumerate(tickets_sold):
     print(f"Room {room + 1} - {sold} ticket(s) sold")
+
+# Programa 6.14 Lendo e imprimindo uma lista de compras
+
+"""
+compras  = []
+while True:
+    produto = input("Produto: ")
+    if produto == "fim":
+        break
+    compras.append(produto)
+
+for p in compras:
+    print(p)
+"""
+
+# Observação para melhorar a condição de saída do produto podemos verificar o produto.lower()
+# Assim de qualquer maneira que digitar fim(Fim, fIm, fiM, FIM...) o programa vai parar.
+
+"""
+compras  = []
+while True:
+    produto = input("Produto: ")
+    if produto.lower() == "fim":
+        break
+    compras.append(produto)
+
+for p in compras:
+    print(p)
+"""
