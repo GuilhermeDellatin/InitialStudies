@@ -853,3 +853,24 @@ while fim > 1:
 for e in L:
     print(e)
 """
+
+# Exercício 6.16
+# O que acontece quando a lista já está ordenada? Rastreie o Programa 6.20, mas com a lista L = [1, 2, 3, 4, 5].
+
+# Resposta: O algoritmo executa normalmente o while interno 4 vezes, porém não realiza nenhuma troca e cai na condição
+# do if not trocou: break parando seus laços de repetição mesmo com fim = 5 e começa a executar o for para impressão
+# da lista ordenada
+
+# Exercício 6.17
+# O que acontece quando dois valores são iguais? Rastreie o Programa 6.20, mas com a lista L = [3, 3, 1, 5, 4].
+
+# Resposta: O algoritmo executa normalmente, na primeira etapa comparando 3 com o 3 ele não executa troca dos valores,
+# depois segue trocando os outros valores, não caindo na condição de break do if, executando o while externo mais uma
+# vez, e comparando a lista novamente, dessa vez realizando a troca do primeiro 3 pelo 1 e comparando novamente a lista
+# toda, ao finalizar como ocorreu troca não cai novamente na condição de break do ife executa o while externo mais uma
+# vez, que por consequência executa o while interno mais uma vez e como não ocorre nenhuma troca dessa vez cai na
+# condição de break do if e vai para o for para realizar a impressão da lista de forma ordenada.
+
+# Exercício 6.18
+# Modifique o Programa 6.20 para ordenar a lista em ordem decrescente. L = [1, 2, 3, 4, 5] deve ser
+# ordenada como L = [5, 4, 3, 2, 1].
