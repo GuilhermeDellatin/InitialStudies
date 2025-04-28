@@ -812,6 +812,7 @@ for e in compras:
 
 """
 compras = []
+
 while True:
     produto = input("Produto: ")
     if produto.lower() == "fim":
@@ -825,5 +826,30 @@ soma = 0.0
 for e in compras:
     print(f"{e[0]:20s} x {e[1]:5d} {e[2]:5.2f} {e[1] * e[2]:6.2f}")
     soma += e[1] * e[2]
+    
 print(f"Total: {soma:7.2f}")
+"""
+
+# Programa 6.20 Ordenação pelo metodo de bolhas
+
+"""
+L = [7, 4, 3, 12, 8]
+fim = 5
+
+while fim > 1:
+    trocou = False
+    x = 0
+    while x < (fim - 1):
+        if L[x] > L[x + 1]:
+            trocou = True
+            temp = L[x]
+            L[x] = L[x + 1]
+            L[x + 1] = temp
+        x += 1
+    if not trocou:
+        break
+    fim -= 1
+
+for e in L:
+    print(e)
 """
