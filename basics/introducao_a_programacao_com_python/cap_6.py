@@ -923,3 +923,21 @@ tabela = {"Alface": 0.45,
 # print(tabela.values()) --> dict_values([0.45, 1.2, 2.3, 1.5])
 # Observação: métodos keys e values retornam geradores, no qual podemos usar diretamente dentro de um for
 # ou transformá-los em uma lista usando a função list.
+
+# Programa 6.21 Obtenção do preço com um dicionário
+
+tabela = {"Alface": 0.45,
+          "Batata": 1.20,
+          "Tomate": 2.30,
+          "Feijão": 1.50}
+
+while True:
+    produto = input("Digite o nome do produto, fim para terminar:")
+    if produto == "fim":
+        break
+    if produto in tabela:
+        print(f"Preço  {tabela[produto]:5.2f}")
+    else:
+        print("Produto não encontrado")
+
+# if produto in tabela: poderia ser elif produto in tabela.
