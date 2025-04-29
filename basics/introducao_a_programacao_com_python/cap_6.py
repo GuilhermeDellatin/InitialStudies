@@ -894,3 +894,32 @@ while fim > 1:
 
 for e in L:
     print(e)
+
+# Dicionários
+# Consistem numa estrutura de dados similar às listas, mas com propriedades de acesso diferentes, composto
+# por um conjunto de chaves e valores, consistindo em relacionar uma chave a um valor específico.
+
+# Segue exemplo de criação de um dicionário
+# Tabela 6.2 Preços de mercadorias
+# Produto       Preço
+# Alface        R$ 0,45
+# Batata        R$ 1,20
+# Tomate        R$ 2,30
+# Feijão        R$ 1,50
+"""
+tabela = {"Alface": 0.45,
+          "Batata": 1.20,
+          "Tomate": 2.30,
+          "Feijão": 1.50}
+"""
+
+# print(tabela["Tomate"])
+# print(tabela)
+# tabela["Tomate"] = 2.50 adicionando novo valor a chave Tomate
+# tabela["Cebola"] = 1.20 adicionando nova chave e valor
+# print("Manga" in tabela) --> False
+# print("Batata" in tabela) --> True
+# print(tabela.keys()) --> dict_keys(['Alface', 'Batata', 'Tomate', 'Feijão'])
+# print(tabela.values()) --> dict_values([0.45, 1.2, 2.3, 1.5])
+# Observação: métodos keys e values retornam geradores, no qual podemos usar diretamente dentro de um for
+# ou transformá-los em uma lista usando a função list.
