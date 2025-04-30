@@ -921,8 +921,8 @@ tabela = {"Alface": 0.45,
 # print("Batata" in tabela) --> True
 # print(tabela.keys()) --> dict_keys(['Alface', 'Batata', 'Tomate', 'Feijão'])
 # print(tabela.values()) --> dict_values([0.45, 1.2, 2.3, 1.5])
-# Observação: métodos keys e values retornam geradores, no qual podemos usar diretamente dentro de um for
-# ou transformá-los em uma lista usando a função list.
+# Observação: métodos keys e values retornam geradores, no qual podemos usar diretamente num for
+# ou transformá-los numa lista usando a função list.
 
 # Programa 6.21 Obtenção do preço com um dicionário
 
@@ -941,3 +941,28 @@ while True:
         print("Produto não encontrado")
 
 # if produto in tabela: poderia ser elif produto in tabela.
+
+# Programa 6.22 Exemplo de dicionário com estoque e operações de venda
+
+estoque = {"tomate": [1000, 2.30],
+           "alface": [500, 0.45],
+           "batata": [2001, 1.20],
+           "feijão": [100, 1.50]}
+venda = [["tomate", 5], ["batata", 10], ["alface", 5]]
+total = 0
+
+print("Vendas:\n")
+for operacao in venda:
+    produto, quantidade = operacao
+    preco = estoque[produto][1]
+    custo = preco * quantidade
+    print(f"{produto:12s}: {quantidade:3d} x {preco:6.2f} = {custo:6.2f}")
+    estoque[produto][0] -= quantidade
+    total += custo
+
+print(f"Custo total: {total:21.2f}\n")
+print("Estoque:\n")
+for chave, dados in estoque.items():
+    print(f"Descrição: ", chave)
+    print(f"Quantidade: ", dados[0])
+    print(f"Preço: {dados[1]:6.2f}\n")
