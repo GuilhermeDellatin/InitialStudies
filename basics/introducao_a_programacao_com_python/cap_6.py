@@ -966,3 +966,12 @@ for chave, dados in estoque.items():
     print(f"Descrição: ", chave)
     print(f"Quantidade: ", dados[0])
     print(f"Preço: {dados[1]:6.2f}\n")
+
+# Exercício 6.19
+# Altere o Programa 6.22 de forma a solicitar ao usuário o produto e a quantidade vendida. Verifique se o
+# nome do produto digitado existe no dicionário, e só então efetue a baixa em estoque.
+
+# Exercício 6.20
+# Escreva um programa que gere um dicionário, em que cada chave seja um caractere, e o seu valor seja o
+# número desse caractere encontrado numa frase lida.
+# Exemplo: O rato → { “O”:1, “r”:1, “a”:1, “t”:1, “o”:1}
