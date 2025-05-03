@@ -971,6 +971,42 @@ for chave, dados in estoque.items():
 # Altere o Programa 6.22 de forma a solicitar ao usuário o produto e a quantidade vendida. Verifique se o
 # nome do produto digitado existe no dicionário, e só então efetue a baixa em estoque.
 
+stock = {"tomate": [1000, 2.30],
+           "alface": [500, 0.45],
+           "batata": [2001, 1.20],
+           "feijão": [100, 1.50]}
+
+total = 0
+
+while True:
+    product_name = input("Enter the product name, or end to finish: ").lower()
+
+    if product_name == "end":
+        break
+
+    sale_quantity = int(input("Enter the product quantity of sale: "))
+    sale = [[product_name, sale_quantity]]
+
+    if product_name in stock:
+        print("Sales:\n")
+        for operacao in sale:
+            price = stock[product_name][1]
+            cost = price * sale_quantity
+            print(f"{product_name:12s}: {sale_quantity:3d} x {price:6.2f} = {cost:6.2f}")
+            stock[product_name][0] -= sale_quantity
+            total += cost
+    else:
+        print(f"Product doesnt exist in stock, "
+              f"please enter some product in stock "
+              f"{stock.keys()}")
+
+print(f"Total Cost: {total:21.2f}\n")
+print("Stock:\n")
+for key, data in stock.items():
+    print(f"Description: ", key)
+    print(f"Quantity: ", data[0])
+    print(f"Price: {data[1]:6.2f}\n")
+
 # Exercício 6.20
 # Escreva um programa que gere um dicionário, em que cada chave seja um caractere, e o seu valor seja o
 # número desse caractere encontrado numa frase lida.
