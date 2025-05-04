@@ -985,16 +985,17 @@ while True:
         break
 
     sale_quantity = int(input("Enter the product quantity of sale: "))
-    sale = [[product_name, sale_quantity]]
 
     if product_name in stock:
         print("Sales:\n")
-        for operacao in sale:
+        if sale_quantity <= stock[product_name][0]:
             price = stock[product_name][1]
             cost = price * sale_quantity
             print(f"{product_name:12s}: {sale_quantity:3d} x {price:6.2f} = {cost:6.2f}")
             stock[product_name][0] -= sale_quantity
             total += cost
+        else:
+            print(f"Has only {stock[product_name][0]} {product_name} in stock")
     else:
         print(f"Product doesnt exist in stock, "
               f"please enter some product in stock "
