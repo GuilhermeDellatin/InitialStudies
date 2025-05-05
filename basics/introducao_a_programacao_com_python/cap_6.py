@@ -1033,3 +1033,25 @@ for character in sentence:
     sentence_dict[character] = sentence_dict.get(character, 0) + 1
 
 print(sentence_dict)
+
+# Programa 6.23 Exemplo de dicionário sem valor padrão
+"""
+d = {}
+for letra in "abracadabra":
+    if letra in d:
+        d[letra] = d[letra] + 1
+    else:
+        d[letra] = 1
+print(d)
+"""
+
+# Imprime ao ser executado: {'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1}
+# Podemos simplificar o código com o metodo get
+
+# Programa 6.24 Exemplo de dicionário com valor padrão
+"""
+d = {}
+for letra in "abracadabra":
+    d[letra] = d.get(letra, 0) + 1
+print(d)
+"""
