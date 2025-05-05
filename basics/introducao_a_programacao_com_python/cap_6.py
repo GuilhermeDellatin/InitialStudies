@@ -1012,3 +1012,24 @@ for key, data in stock.items():
 # Escreva um programa que gere um dicionário, em que cada chave seja um caractere, e o seu valor seja o
 # número desse caractere encontrado numa frase lida.
 # Exemplo: O rato → { “O”:1, “r”:1, “a”:1, “t”:1, “o”:1}
+
+sentence = input("Enter the sentence").replace(" ", "")
+sentence_dict = {}
+
+for character in sentence:
+    if character in sentence_dict:
+        sentence_dict[character] = sentence_dict[character] + 1
+    else:
+        sentence_dict[character] = 1
+
+print(sentence_dict)
+
+# Another solution
+
+sentence = input("Enter the sentence").replace(" ", "")
+sentence_dict = {}
+
+for character in sentence:
+    sentence_dict[character] = sentence_dict.get(character, 0) + 1
+
+print(sentence_dict)
