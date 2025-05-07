@@ -1055,3 +1055,46 @@ for letra in "abracadabra":
     d[letra] = d.get(letra, 0) + 1
 print(d)
 """
+
+# Tuplas
+#
+# Tuplas podem ser vistas como listas imutáveis em Python, sendo ideais
+# para representar listas de valores constantes e realizar operações de
+# empacotamento e desempacotamento de valores.
+
+# tupla = ("a", "b", "c") -> ('a', 'b', 'c')
+# parenteses opcionais na criação
+# tupla = "a", "b", "c" -> ('a', 'b', 'c')
+# tupla[0] -> 'a'
+# tupla[2] -> 'c'
+# tupla[1:] -> ('b', 'c') ***Fatiamento
+# len(tupla) -> 3
+# for elemento in tupla:......
+
+# tupla[0] = "A" -> TypeError: 'tuple' object does not support item assignment
+
+# Empacotamento
+# tupla = 100, 200, 300 -> (100, 200, 300) ***No caso 100,200,300 foram
+# convertidos em uma tupla com três elementos.
+# tuplas podem ser usadas também para desempactor valores:
+# a, b = 10, 20
+# a -> 10
+# b -> 20
+# a, b = b, a
+# a -> 20, b -> 10
+
+# t1 = (1) -> 1 Cria um inteiro, não uma tupla
+# t2 = (1,) -> (1,) Cria uma tupla com 1 elemento
+# t3 = 1, -> (1,) Cria uma tupla com 1 elemento
+# t4 = () -> () Cria uma tupla vazia
+# L = [1, 2, 3]
+# T = tuple(L) -> (1, 2, 3) Cria uma tupla a partir de uma lista
+# t1 = (1, 2, 3)
+# t2 = (4, 5, 6)
+# t1 + t2 -> (1, 2, 3, 4, 5, 6) Concatenação de tuplas gera uma nova tupla
+
+# tupla = ("a", ["b", "c", "d"]) -> ('a', ['b', 'c', 'd'])
+# len(tupla) -> 2
+# tupla[1] -> ['b', 'c', 'd']
+# tupla[1].append("e") -> ('a', ['b', 'c', 'd', 'e']) aqui alteramos apenas o segundo
+# elemento que é a lista, mas não alteramos nada na tupla
