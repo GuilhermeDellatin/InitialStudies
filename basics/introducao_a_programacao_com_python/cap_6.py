@@ -1074,9 +1074,9 @@ print(d)
 # tupla[0] = "A" -> TypeError: 'tuple' object does not support item assignment
 
 # Empacotamento
-# tupla = 100, 200, 300 -> (100, 200, 300) ***No caso 100,200,300 foram
+# tupla = 100, 200, 300 -> (100, 200, 300) ***No caso 100, 200, 300 foram
 # convertidos em uma tupla com três elementos.
-# tuplas podem ser usadas também para desempactor valores:
+# Tuplas podem ser usadas também para desempactor valores:
 # a, b = 10, 20
 # a -> 10
 # b -> 20
@@ -1131,5 +1131,5 @@ print(d)
 # b -> 2
 # c -> [3, 4, 5]
 
-# Podemos entender essa sintaxe de forma que a váriavel sem * receberá apenas um valor
-# respectivo a sua posição, enquanto que a váriavel com * receberá os valores que sobraram.
+# Podemos entender essa sintaxe de forma que a variável sem * receberá apenas um valor
+# respectivo a sua posição, enquanto a variável com * receberá os valores que sobraram.
