@@ -1098,3 +1098,38 @@ print(d)
 # tupla[1] -> ['b', 'c', 'd']
 # tupla[1].append("e") -> ('a', ['b', 'c', 'd', 'e']) aqui alteramos apenas o segundo
 # elemento que é a lista, mas não alteramos nada na tupla
+
+# Operações de empacotamento
+# As operações de empacotamento também funcionam com listas
+# a, b = 1, 2
+# a -> 1
+# b -> 2
+# b, c = [3, 4]
+# b -> 3
+# c -> 4
+#
+# a*, b = [1, 2, 3, 4, 5]
+# a -> [1, 2, 3, 4]
+# b -> 5
+#
+# a, b* = [1, 2, 3, 4, 5]
+# a -> 1
+# b = [2, 3, 4, 5]
+#
+# *a, b, c = [1, 2, 3, 4, 5]
+# a -> [1, 2, 3]
+# b -> 4
+# c -> 5
+#
+# a, b*, c = [1, 2, 3, 4, 5]
+# a -> 1
+# b -> [2, 3, 4]
+# c -> 5
+#
+# a, b, c* = [1, 2, 3, 4, 5]
+# a -> 1
+# b -> 2
+# c -> [3, 4, 5]
+
+# Podemos entender essa sintaxe de forma que a váriavel sem * receberá apenas um valor
+# respectivo a sua posição, enquanto que a váriavel com * receberá os valores que sobraram.
