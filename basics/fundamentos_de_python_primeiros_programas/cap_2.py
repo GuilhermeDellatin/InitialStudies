@@ -1,0 +1,61 @@
+# Exercício 1
+# Seja a variável x definida com valor "dog" e y com valor "cat".
+# Escreva os valores retornados pelas seguintes operações:
+
+# a. x + y
+# b. "the " + x + " loves the " + y
+# c. x * 4
+
+# Resposta:
+# a. 'dogcat'
+# b. 'the dog loves the cat'
+# c. 'dogdogdogdog'
+
+# Exercício 2
+# Escreva uma string que contenha o seu nome e endereço em linhas separadas
+# utilizando caracteres de nova linha incorporado. Em seguida, escreva
+# o mesmo literal de string sem os caracteres de nova linha.
+
+info = "Guilherme \nRua da computação, 0101 \nPython - 1010"
+print(info)
+
+info_without_new_line = "Guilherme Rua da computação, 0101 Python - 1010"
+print(info_without_new_line)
+
+# Exercício 3
+# Como incluir um apóstrofo como um caractere num literal de string?
+
+# Resposta:
+# Dentro de "" aspas duplas o apóstrofo ' vai funcionar normalmente
+# Se a string tiver '' aspas simples o apóstrofo ' precisa de uma \ para funcionar
+
+apostrofe = "It's a beautiful day"
+print(apostrofe)
+
+other_apostrofe = 'It\'s a beautiful day'
+print(other_apostrofe)
+
+# Exercício 4
+# O que acontece quando a função print imprime um literal de string com
+# caracteres de nova linha incorporados?
+
+# Resposta:
+# O caractere é interpretado como uma quebra de linha e a função print
+# vai exibir múltiplas linhas automaticamente
+
+# Exercício 5
+# Quais dos seguintes nomes de variáveis são válidos?
+# a. length
+# b. _width
+# c. firstBase
+# d. 2MoreToGo
+# e. halt!
+
+# Resposta: Os nomes de variáveis válidos são a. length, b. _width e c. firstBase
+
+# Exercício 6
+# Liste dois dos propósitos da documentação do programa.
+
+# Resposta:
+# Escrever uma breve instrução da finalidade de um programa
+# Facilitar o entendimento de um código que tem uma certa complexidade para outros
