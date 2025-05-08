@@ -59,3 +59,27 @@ print(other_apostrofe)
 # Resposta:
 # Escrever uma breve instrução da finalidade de um programa
 # Facilitar o entendimento de um código que tem uma certa complexidade para outros
+
+# Exercício 7
+# Seja x = 8 e y = 2. Escreva os valores das seguintes expressões:
+# a. x + y * 3
+# b. (x + y) * 3
+# c. x ** y
+# d. x % y
+# e. x / 12.0
+# f. x // 6
+
+# Exercício 8
+# Seja x = 4.66 Escreva os valores das seguintes expressões:
+# a. round(x)
+# b. int(x)
+
+# Exercício 9
+# Como um programador Python arredonda um valor float para o valor int mais próximo?
+
+# Exercício 10
+# Como um programador Python concatena um valor numérico a um valor de string?
+
+# Exercício 11
+# Suponha que a variável x tenha o valor 55. Utilize uma instrução de atribuição para
+# incrementar o valor de x por 1.
