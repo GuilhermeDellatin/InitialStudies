@@ -109,6 +109,10 @@ print(int(x))
 # Exercício 10
 # Como um programador Python concatena um valor numérico a um valor de string?
 
+# Resposta:
+# Em Python para concatenar um valor numérico a uma string primeiro precisamos converter o valor numérico em string.
+# Também podemos fazer de uma forma mais moderna e recomendada que é usando f-strings
+
 # Exercício 11
 # Suponha que a variável x tenha o valor 55. Utilize uma instrução de atribuição para
 # incrementar o valor de x por 1.
