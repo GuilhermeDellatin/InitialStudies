@@ -69,10 +69,36 @@ print(other_apostrofe)
 # e. x / 12.0
 # f. x // 6
 
+# Resposta:
+# a. 14
+# b. 30
+# c. 64
+# d. 0
+# e. 0.6666666666666666
+# f. 1
+
+x = 8
+y = 2
+
+print(x + y * 3)
+print((x + y) * 3)
+print(x ** y)
+print(x % y)
+print(x / 12.0)
+print(x // 6)
+
 # Exercício 8
 # Seja x = 4.66 Escreva os valores das seguintes expressões:
 # a. round(x)
 # b. int(x)
+
+# Resposta:
+# a. 5
+# b. 4
+
+x = 4.66
+print(round(x))
+print(int(x))
 
 # Exercício 9
 # Como um programador Python arredonda um valor float para o valor int mais próximo?
