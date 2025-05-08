@@ -103,6 +103,9 @@ print(int(x))
 # Exercício 9
 # Como um programador Python arredonda um valor float para o valor int mais próximo?
 
+# Resposta:
+# Em Python para arredondar um valor float para o inteiro mais próximo usamos a função round()
+
 # Exercício 10
 # Como um programador Python concatena um valor numérico a um valor de string?
 
