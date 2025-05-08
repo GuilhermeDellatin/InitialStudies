@@ -1057,7 +1057,7 @@ print(d)
 """
 
 # Tuplas
-#
+
 # Tuplas podem ser vistas como listas imutáveis em Python, sendo ideais
 # para representar listas de valores constantes e realizar operações de
 # empacotamento e desempacotamento de valores.
@@ -1133,3 +1133,56 @@ print(d)
 
 # Podemos entender essa sintaxe de forma que a variável sem * receberá apenas um valor
 # respectivo a sua posição, enquanto a variável com * receberá os valores que sobraram.
+
+# Conjuntos (set)
+
+# Conjuntos, set em Python, são uma estrutura de dados que implementam operações de união, intersecção, diferença,
+# entre outras.
+# Conjuntos de dados não aceitam repetição de elementos
+
+# Para criar um conjunto
+# a = set() ou a = {1, 2, 3}
+# a.add(1).....a.add(3)
+# a -> {1, 2, 3}
+# a.add(1) novamente, essa adição é ignorada porque jã está presente no conjunto
+# a.add(0)... a.add(-1)
+# a -> {0, 1, 2, 3, -1} Conjuntos não mantém a ordem dos seus elementos
+# 1 in a -> True, -2 in a -> False
+
+# Um Conjunto (set) pode ser criado a partir de listas, tuplas, qualquer outra estrutura de dados que seja enumerável
+# b = set([2, 3])
+# b -> {2, 3}
+
+# len(a) -> 5
+# len(b) -> 2
+
+# Operações entre Conjuntos
+
+# União
+# Realizada pelo operador |  e gera um novo conjunto
+# a = {0, 1, 2, 3, -1}
+# b = {2, 3}
+# c = set([4, 5, 6])
+# a | b -> {0, 1, 2, 3, -1}
+# a | c -> {0, 1, 2, 3, 4, 5, 6, -1}
+# Também poderia ser escrita como a.union(b)
+
+# Intersecção
+# Retorna elementos comuns em ambos os conjuntos
+# a = {1, 2, 3, 6}
+# b = {2, 4, 5, 6}
+# a.intersection(b) -> {2, 6}
+
+# Diferença
+# Retorna elementos de um conjunto que não estão no outro conjunto
+# a = {0, 1, 2, 3, -1}
+# b = {2, 3}
+# a.difference(b) ou a - b-> {0, 1, -1}
+
+# Diferença simétrica
+# Retorna elementos que não são comuns nos dois conjuntos
+# a = {1, 2, 3, 6}
+# b = {2, 4, 5, 6}
+# a.symmetric_difference(b) ou a ^ b -> {1, 3, 4, 5}
+
+# Outras operações
