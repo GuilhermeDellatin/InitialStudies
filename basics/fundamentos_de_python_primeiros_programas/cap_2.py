@@ -116,3 +116,9 @@ print(int(x))
 # Exercício 11
 # Suponha que a variável x tenha o valor 55. Utilize uma instrução de atribuição para
 # incrementar o valor de x por 1.
+
+# Resposta: Vamos incrementar o valor de x usando x += 1
+
+x = 55
+x += 1
+print(x)
