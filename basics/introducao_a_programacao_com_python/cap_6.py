@@ -1236,3 +1236,19 @@ print(d)
 
 # Elementos que estão tanto em E quanto em F:
 # set(E) & set(F) -> {3, 4}
+
+# Exercício 6.21
+# Escreva um programa que compare duas listas. Utilizando operações com conjuntos, imprima:
+# • os valores comuns às duas listas
+# • os valores que só existem na primeira
+# • os valores que existem apenas na segunda
+# • uma lista com os elementos não repetidos das duas listas.
+# • a primeira lista sem os elementos repetidos na segunda
+
+# Exercício 6.22
+# Escreva um programa que compare duas listas. Considere a primeira lista como a versão inicial e a
+# segunda como a versão após alterações. Utilizando operações com conjuntos, o seu programa deverá
+# imprimir a lista de modificações entre essas duas versões, listando:
+# • os elementos que não mudaram
+# • os novos elementos
+# • os elementos que foram removidos
