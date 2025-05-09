@@ -1186,3 +1186,53 @@ print(d)
 # a.symmetric_difference(b) ou a ^ b -> {1, 3, 4, 5}
 
 # Outras operações
+
+# a  = {x, for x in range(0, 10, 2)}
+# a = {2, 4, 6, 8}
+# b = {2, 4}
+
+# Podemos verificar se um conjunto contém outro usando >:
+# a > b -> True Todos os elementos de B estão em A
+# b > a -> False Nem todos os elementos de A pertence a B
+# a > a -> False Todos os elementos de A estão em A, mas eles não são diferentes
+# a >= b -> True
+# b >= a -> False
+# a >= a -> True
+# b >= {2, 4} -> True
+# a < b -> False A está contido em B
+# b < a -> True
+# a <= b -> False A está contido em B não é igual a B
+# b <= a -> True B está contido em A (todos os elementos de B são elementos de A)
+# a <= a -> True
+# a == a -> True
+# a == b -> False
+# b == {2, 4} -> True
+# a != a -> False
+# a != b -> True
+# b != {2, 4} -> False
+
+# Podemos verificar se o conjunto é vazio
+# if {}:
+#   print("Não vazio")
+# else:
+#   print("Vazio")
+
+# Conjuntos são práticos quando não precisamos guardar a ordem dos elementos. Conjuntos garantem que não há
+# elementos repetidos, e podem ser usados quase como uma lista, mas não suporta acesso por posição.
+
+# Exemplo
+
+# E = [1, 2, 3, 4]
+# F = [3, 4, 5, 6]
+
+# Juntando as duas listas
+# set(E) | set(F) -> {1, 2, 3, 4, 5, 6}
+
+# Elementos da lista E que não estão em F
+# set(E) - set(F) -> {1, 2}
+
+# Elementos que estão apenas em E ou F
+# set(E) ^ set(F) -> {1, 2, 5, 6}
+
+# Elementos que estão tanto em E quanto em F:
+# set(E) & set(F) -> {3, 4}
