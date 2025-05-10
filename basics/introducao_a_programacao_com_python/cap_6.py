@@ -1245,6 +1245,29 @@ print(d)
 # • uma lista com os elementos não repetidos das duas listas.
 # • a primeira lista sem os elementos repetidos na segunda
 
+list_one = [1, 2, 3, 4]
+list_two = [3, 4, 5, 6]
+
+result_set = set(list_one) & set(list_two)
+print(f"Common value in list one: {list_one} and list two: {list_two} is {result_set}")
+
+result_set = set(list_one) - set(list_two)
+print(f"Value in list one: {list_one} and list two: {list_two} and value only exist in list one is: {result_set}")
+
+result_set = set(list_two) - set(list_one)
+print(f"Value in list one: {list_one} and list two: {list_two} and value only exist in list two is: {result_set}")
+
+result_set = set(list_one) ^ set(list_two)
+print(f"Value in list one: {list_one} and list two: {list_two} and value not repeat in two lists is: {result_set}")
+
+result_list = [x for x in list_one if x not in list_two]
+print(f"Value in list one: {list_one} and list two: {list_two} "
+      f"and first list without elements from the second: {result_list}")
+
+# Observação: Esta ultima solução poderia ser igual a:
+# result_set = set(list_one) - set(list_two)
+# print(f"Value in list one: {list_one} and list two: {list_two} and value only exist in list one is: {result_set}")
+
 # Exercício 6.22
 # Escreva um programa que compare duas listas. Considere a primeira lista como a versão inicial e a
 # segunda como a versão após alterações. Utilizando operações com conjuntos, o seu programa deverá
