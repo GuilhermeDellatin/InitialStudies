@@ -1276,8 +1276,8 @@ print(f"Value in list one: {list_one} and list two: {list_two} "
 # • os novos elementos
 # • os elementos que foram removidos
 
-list_initial = [1, 2, 5, 6, 9]
-list_altered = [1, 2, 8, 10]
+list_initial = [1, 2, 3, 4, 5]
+list_altered = [1, 2, 6, 7]
 
 print(f"Initial List {list_initial}")
 print(f"Altered List {list_altered}")
