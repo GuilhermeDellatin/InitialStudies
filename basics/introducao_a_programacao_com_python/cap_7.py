@@ -1,3 +1,26 @@
+# Algumas operações com Strings
+
+# Podemos acessar strings como listas, e strings são imutáveis, e se quisermos trabalhar caractere a caractere
+# com uma string, alterando os seus valores, podemos transformá-la numa lista:
+
+# L = list("Alô mundo") -> transforma cada caractere da string num elemento da lista
+# L[0] = "a"
+# print(L) -> ['a', 'l', 'ô', 'm', 'u', 'n', 'd', o']
+# s = "".join(L) -> join transforma uma lista em string
+# print(s) -> alô Mundo
+
+# .startswith("") -> verifica os primeiros caracteres da string
+# .endswith("") -> verifica os últimos caracteres da string
+# .lower() -> retorna uma cópia da string com os caracteres minúsculos
+# .upper() -> retorna uma cópia da string com os caracteres maiúsculos
+# s = "Maria Amélia Souza"
+# Amélia in s -> True, Amélia not in s -> False, podemos usar o operador in e not in para verificar
+# se uma palavra pertence a uma string.
+# count() -> Conta recorrências de uma letra ou palavra na string
+# find("") -> Pesquisa se uma string está dentro de outra(dir -> esq)
+# rfind("") -> Pesquisa se uma string está dentro de outra(esq -> dir) busca reversa*
+# s[7:] -> Fatiamento, retorna a string a partir de determinada posição [inicio, fim]
+
 # Exercício 7.1
 # Escreva um programa que leia duas strings. Verifique se a segunda ocorre dentro da primeira e imprima
 # a posição de início.
