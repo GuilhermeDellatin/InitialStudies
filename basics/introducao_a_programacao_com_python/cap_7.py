@@ -79,6 +79,23 @@ else:
 # 3.ª string: BT
 # A ordem dos caracteres da terceira string não é importante.
 
+first_string = input("Enter the first string: ")
+second_string = input("Enter the second string: ")
+third_string = ""
+
+for character in first_string:
+    if character not in second_string and character not in third_string:
+        third_string += character
+
+for character in second_string:
+    if character not in first_string and character not in third_string:
+        third_string += character
+
+if third_string == "":
+    print("Two string have common characters")
+else:
+    print(f"Characters is not common in two strings is {third_string}")
+
 # Exercício 7.4
 # Escreva um programa que leia uma string e imprima quantas vezes cada caractere aparece nessa string.
 # String: TTAAC Resultado: T: 2x A: 2x C: 1x
