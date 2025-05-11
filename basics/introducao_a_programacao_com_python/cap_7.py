@@ -42,12 +42,14 @@ while p > -1:
 # 2.ª string: BE
 # Resultado: BE encontrado na posição 3 de AABBEFAATT
 
-first_string = "AABBEFAATT"
-second_string = "BE"
+first_string = input("Enter the first string: ")
+second_string = input("Enter the second string: ")
 occurrence = second_string in first_string
 if occurrence:
     print(f"{second_string} find in {first_string.find(second_string)} of {first_string} using find method")
     print(f"{second_string} find in {first_string.index(second_string)} of {first_string} using index method")
+else:
+    print(f"Theres no occurrence of {second_string} in {first_string}")
 
 # Exercício 7.2
 # Escreva um programa que leia duas strings e gere uma terceira com os caracteres comuns às duas strings lidas.
