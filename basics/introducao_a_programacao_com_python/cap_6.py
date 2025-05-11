@@ -586,7 +586,7 @@ for t in mons_temperatures:
 
 print(f"The lower temperature is {lower_temperature} "
       f"the higher temperature is {higher_temperature} "
-      f"and the average of temperatures is {average_temperature / count }")
+      f"and the average of temperatures is {average_temperature / count}")
 
 # Observação: Outras formas de resolver o problema, mas já usando funções prontas:
 """
@@ -972,9 +972,9 @@ for chave, dados in estoque.items():
 # nome do produto digitado existe no dicionário, e só então efetue a baixa em estoque.
 
 stock = {"tomate": [1000, 2.30],
-           "alface": [500, 0.45],
-           "batata": [2001, 1.20],
-           "feijão": [100, 1.50]}
+         "alface": [500, 0.45],
+         "batata": [2001, 1.20],
+         "feijão": [100, 1.50]}
 
 total = 0
 
