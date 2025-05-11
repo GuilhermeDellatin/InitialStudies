@@ -58,6 +58,19 @@ else:
 # Resultado: CBT A ordem dos caracteres da string gerada não é importante,
 # mas deve conter todas as letras comuns a ambas.
 
+first_string = input("Enter the first string: ")
+second_string = input("Enter the second string: ")
+third_string = ""
+
+for character in first_string:
+    if character in second_string and character not in third_string:
+        third_string += character
+
+if third_string == "":
+    print("Two string doesn't have common characters")
+else:
+    print(f"Common characters in two strings is {third_string}")
+
 # Exercício 7.3
 # Escreva um programa que leia duas strings e gere uma terceira apenas com os caracteres que aparecem
 # em uma delas.
