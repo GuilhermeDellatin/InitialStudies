@@ -20,6 +20,8 @@
 # find("") -> Pesquisa se uma string está dentro de outra(dir -> esq)
 # rfind("") -> Pesquisa se uma string está dentro de outra(esq -> dir) busca reversa*
 # s[7:] -> Fatiamento, retorna a string a partir de determinada posição [inicio, fim]
+# index() -> Retorna o index da substring ou uma exception do tipo ValueError
+# rindex() -> Retorna o index(esq -> dir) da substring ou uma exception do tipo ValueError
 
 # Programa 7.1 Pesquisa de todas as ocorrências
 """
@@ -39,6 +41,13 @@ while p > -1:
 # 1.ª string: AABBEFAATT
 # 2.ª string: BE
 # Resultado: BE encontrado na posição 3 de AABBEFAATT
+
+first_string = "AABBEFAATT"
+second_string = "BE"
+occurrence = second_string in first_string
+if occurrence:
+    print(f"{second_string} find in {first_string.find(second_string)} of {first_string} using find method")
+    print(f"{second_string} find in {first_string.index(second_string)} of {first_string} using index method")
 
 # Exercício 7.2
 # Escreva um programa que leia duas strings e gere uma terceira com os caracteres comuns às duas strings lidas.
