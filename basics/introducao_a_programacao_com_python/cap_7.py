@@ -21,6 +21,18 @@
 # rfind("") -> Pesquisa se uma string está dentro de outra(esq -> dir) busca reversa*
 # s[7:] -> Fatiamento, retorna a string a partir de determinada posição [inicio, fim]
 
+# Programa 7.1 Pesquisa de todas as ocorrências
+"""
+s = "um tigre, dois tigres, três tigres"
+p = 0
+
+while p > -1:
+    p = s.find("tigre", p)
+    if p >= 0:
+        print(f"Posição: {p}")
+        p += 1
+"""
+
 # Exercício 7.1
 # Escreva um programa que leia duas strings. Verifique se a segunda ocorre dentro da primeira e imprima
 # a posição de início.
