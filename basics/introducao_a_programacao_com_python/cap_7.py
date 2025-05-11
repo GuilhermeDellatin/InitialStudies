@@ -92,9 +92,16 @@ for character in second_string:
         third_string += character
 
 if third_string == "":
-    print("Two string have common characters")
+    print("The two strings have only common characters.")
 else:
-    print(f"Characters is not common in two strings is {third_string}")
+    print(f"Characters unique to one of the strings: {third_string}")
+
+# Solve using sets:
+first_string = input("Enter the first string: ")
+second_string = input("Enter the second string: ")
+
+third_string = set(first_string) ^ set(second_string)
+print(f"Characters unique to one of the strings: {''.join(third_string)}")
 
 # Exercício 7.4
 # Escreva um programa que leia uma string e imprima quantas vezes cada caractere aparece nessa string.
@@ -112,8 +119,8 @@ else:
 # caracteres da segunda pelos da terceira.
 # 1.ª string: AATTCGAA
 # 2.ª string: TG
-# 3.ª string: AC Resultado:
-# AAAACCAA
+# 3.ª string: AC
+# Resultado: AAAACCAA
 
 # Exercício 7.7
 # Escreva um programa que peça ao usuário que digite uma frase e imprima quantas vogais ela contém.
